@@ -1,0 +1,23 @@
+//navbar
+
+.navbar {
+    background-color: $white;
+    height: 40px;
+    //border: 1px solid $dark;
+}
+
+.navbar .container {
+    
+}
+
+.navbar__text-title--active {
+    position: relative;
+    left: -60px;
+    top: 5px;
+    color: $turquoise;
+
+}
+
+.navbar__text--inactive {
+    padding-top: 10px;
+}
