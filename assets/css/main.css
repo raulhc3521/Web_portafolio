@@ -367,13 +367,37 @@ a {
 }
 
 header {
-  padding: 200px 10px;
+  padding: 350px 10px;
 }
 header .descripcion__text .descripcion__text__uxui {
   color: #32E0C4;
 }
 header .descripcion__text .descripcion__text__di {
   color: #D253FF;
+}
+
+.educacion__title, .experiencia__title, .proyectos__title, .conocimientos__title, .footer__title {
+  text-align: center;
+  font-weight: 700;
+  color: #222831;
+}
+
+.bg {
+  background-color: #A3B4B4;
+  transform: skewY(2deg);
+  padding: 5% 20px;
+}
+.bg .content {
+  transform: skewY(-2deg);
+}
+
+.bg2 {
+  background-color: #A3B4B4;
+  transform: skewY(-2deg);
+  padding: 5% 20px;
+}
+.bg2 .content {
+  transform: skewY(2deg);
 }
 
 /*# sourceMappingURL=main.css.map */

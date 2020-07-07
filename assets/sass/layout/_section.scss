@@ -1,2 +1,23 @@
+.educacion__title, .experiencia__title, .proyectos__title, .conocimientos__title, .footer__title {
+    text-align: center;
+    font-weight: 700;
+    color: $dark;
+}
 
+.bg {
+    background-color: $cobalt-gray;
+    transform: skewY(2deg);
+    padding: 5% 20px;
+    .content {
+        transform: skewY(-2deg);
+    }
+}
 
+.bg2 {
+    background-color: $cobalt-gray;
+    transform: skewY(-2deg);
+    padding: 5% 20px;
+    .content {
+        transform: skewY(2deg);
+    }
+}
