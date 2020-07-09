@@ -9,4 +9,20 @@ header {
             color: $violet;
         }
     }
+    .descripcion__avatar {
+        position: fixed;
+        top: 30vh;
+        left: -15vw;
+        height: 400px;
+        width: 400px;
+        background-color: $turquoise;
+        //background-image: url(../images/foto_perfil.jpg);
+        opacity: 1;
+        transform: rotate(-45deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 250%;
+        //border: 1px solid $violet;
+        z-index: 2;
+    }
 }
