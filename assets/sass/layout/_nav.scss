@@ -15,7 +15,10 @@
 }
 
 .navbar__text-title--active {
+    text-decoration: none;
     position: relative;
+    font-size: $h3-size;
+    width: 300px;
     left: -60px;
     top: 5px;
     color: $turquoise;
@@ -23,5 +26,8 @@
 }
 
 .navbar__text--inactive {
+    text-decoration: none;
     padding-top: 10px;
+    font-size: $h5-size;
+    color: $dark;
 }

@@ -54,7 +54,7 @@ table {
 }
 
 h1, h2, h3, h4, h5, p, a, button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Comfortaa", "Open Sans", sans-serif;
 }
 
 a, button {
@@ -114,7 +114,7 @@ a {
   }
 }
 .container {
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -141,7 +141,7 @@ a {
 }
 @media only screen and (min-width: 1200px) {
   .container {
-    width: 70%;
+    width: 75%;
   }
 }
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-8, .col-10, .col-11, .col-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -152,7 +152,7 @@ a {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
+  grid-gap: 0px;
 }
 
 .col-12 {
@@ -360,14 +360,20 @@ a {
 }
 
 .navbar__text-title--active {
+  text-decoration: none;
   position: relative;
+  font-size: 30px;
+  width: 300px;
   left: -60px;
   top: 5px;
   color: #32E0C4;
 }
 
 .navbar__text--inactive {
+  text-decoration: none;
   padding-top: 10px;
+  font-size: 18px;
+  color: #222831;
 }
 
 header {
@@ -392,6 +398,27 @@ header .descripcion__avatar {
   background-position: center;
   background-size: 250%;
   z-index: 2;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+header .scroll {
+  background-color: #D253FF;
+  position: fixed;
+  bottom: -75px;
+  right: 50px;
+  height: 100px;
+  width: 100px;
+  z-index: 4;
+  color: #FFFFFF;
+  padding: 15px 0 5px;
+  text-align: center;
+}
+header .scroll .hello {
+  padding-bottom: 80px;
+}
+header .scroll .up {
+  transform: rotate(135deg);
+  text-align: left;
+  margin-bottom: -20px;
 }
 
 .educacion__title, .experiencia__title, .proyectos__title, .conocimientos__title, .contactame__title, .footer__title {
@@ -473,6 +500,80 @@ header .descripcion__avatar {
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
+}
+
+.contactame p {
+  color: #FFFFFF;
+  font-weight: 200;
+}
+.contactame .form, .contactame input, .contactame textarea {
+  margin: 5px 0;
+  width: 100%;
+}
+.contactame input {
+  height: 30px;
+}
+.contactame textarea {
+  max-width: 100%;
+  min-width: 100%;
+  height: 100px;
+}
+.contactame input, .contactame textarea {
+  box-sizing: border-box;
+  border: 1px solid #32E0C4;
+  box-shadow: 0px 0px 10px 0px #A3B4B4;
+  color: #393E46;
+}
+.contactame input:hover, .contactame input:focus, .contactame textarea:hover, .contactame textarea:focus {
+  box-shadow: 0px 0px 10px 0px #32E0C4;
+}
+
+.proyectos input {
+  display: none;
+}
+.proyectos__ux {
+  background-color: #32E0C4;
+}
+.proyectos__ux .title {
+  padding: 100px 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+.proyectos__di {
+  background-color: #D253FF;
+}
+.proyectos__di .title {
+  padding: 100px 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+.proyectos .proyectos__desplegable1, .proyectos .proyectos__desplegable2 {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+.proyectos #desplegable1:checked ~ .proyectos__desplegable1 {
+  height: 600px;
+  transition: height 0.3s ease-in-out;
+}
+.proyectos #desplegable2:checked ~ .proyectos__desplegable2 {
+  height: 600px;
+  transition: height 0.3s ease-in-out;
+}
+.proyectos .proyectos__proyecto {
+  float: right;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  background-color: #D5E0E0;
+}
+.proyectos .proyectos__proyecto .proyectos__descripcion {
+  float: right;
+  width: 250px;
+  height: 200px;
+  text-align: right;
+  margin: 80px 30px 0 0;
 }
 
 .footer {
