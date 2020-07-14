@@ -12,7 +12,7 @@ header {
     .descripcion__avatar {
         position: fixed;
         top: 30vh;
-        left: -15vw;
+        left: -400px;
         height: 400px;
         width: 400px;
         background-color: $turquoise;
@@ -38,6 +38,7 @@ header {
         color: $white;
         padding: 15px 0 5px;
         text-align: center;
+        box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: .2);
         //transform: rotate(-135deg);
         
         .hello {

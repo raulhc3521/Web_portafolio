@@ -66,23 +66,23 @@ h1, h2, h3, h4, h5, p {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 34px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 p {
@@ -113,8 +113,110 @@ a {
     max-height: 100%;
   }
 }
+button {
+  display: block;
+  background-color: #32E0C4;
+  width: 150px;
+  height: 40px;
+  margin: 40px auto 0;
+  border-radius: 4px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 576px) {
+  .d-none-sm {
+    display: none;
+  }
+
+  .d-block-sm {
+    display: block;
+  }
+
+  .d-inline-sm {
+    display: inline;
+  }
+
+  .d-inline-block-sm {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .d-none-md {
+    display: none;
+  }
+
+  .d-block-md {
+    display: block;
+  }
+
+  .d-inline-md {
+    display: inline;
+  }
+
+  .d-inline-block-md {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .d-none-lg {
+    display: none;
+  }
+
+  .d-block-lg {
+    display: block;
+  }
+
+  .d-inline-lg {
+    display: inline;
+  }
+
+  .d-inline-block-lg {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .d-none-xl {
+    display: none;
+  }
+
+  .d-block-xl {
+    display: block;
+  }
+
+  .d-inline-xl {
+    display: inline;
+  }
+
+  .d-inline-block-xl {
+    display: inline-block;
+  }
+}
 .container {
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -131,7 +233,7 @@ a {
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 85%;
+    width: 90%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -141,7 +243,7 @@ a {
 }
 @media only screen and (min-width: 1200px) {
   .container {
-    width: 75%;
+    width: 70%;
   }
 }
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-8, .col-10, .col-11, .col-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -362,7 +464,7 @@ a {
 .navbar__text-title--active {
   text-decoration: none;
   position: relative;
-  font-size: 30px;
+  font-size: 20px;
   width: 300px;
   left: -60px;
   top: 5px;
@@ -372,7 +474,7 @@ a {
 .navbar__text--inactive {
   text-decoration: none;
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #222831;
 }
 
@@ -388,7 +490,7 @@ header .descripcion__text .descripcion__text__di {
 header .descripcion__avatar {
   position: fixed;
   top: 30vh;
-  left: -15vw;
+  left: -400px;
   height: 400px;
   width: 400px;
   background-color: #32E0C4;
@@ -411,6 +513,7 @@ header .scroll {
   color: #FFFFFF;
   padding: 15px 0 5px;
   text-align: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 header .scroll .hello {
   padding-bottom: 80px;
@@ -425,7 +528,7 @@ header .scroll .up {
   text-align: center;
   font-weight: 700;
   color: #222831;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .bg {
@@ -445,7 +548,7 @@ header .scroll .up {
 }
 
 .experiencia, .conocimientos, .bg, .bg2 {
-  padding: 100px 0 150px;
+  padding: 80px 0 100px;
 }
 
 .contactame {
@@ -453,58 +556,60 @@ header .scroll .up {
 }
 
 .educacion .educacion__text {
-  margin: 30px 0 70px 0;
+  padding-left: 50px;
+  margin-bottom: 50px;
 }
 .educacion .educacion__text:last-of-type {
   margin-bottom: 0px;
 }
 .educacion .educacion__img {
   background-image: url(../images/utem.png);
-  width: 300px;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  background-size: contain;
 }
 .educacion .educacion__img2 {
   background-image: url(../images/Desafio_latam.svg);
-  width: 300px;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  background-size: contain;
 }
 
 .experiencia__text {
-  margin: 30px 0 70px 0;
+  padding-right: 50px;
+  margin-bottom: 50px;
 }
 .experiencia__text:last-of-type {
   margin-bottom: 0px;
 }
 .experiencia .experiencia__img {
   background-image: url(../images/Proteinlab.svg);
-  width: 300px;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  background-size: contain;
 }
 .experiencia .experiencia__img2 {
   background-image: url(../images/adario.png);
-  background-size: 80%;
-  width: 300px;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  background-size: contain;
 }
 .experiencia .experiencia__img3 {
   background-image: url(../images/utem.png);
-  width: 300px;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  background-size: contain;
 }
 
 .contactame p {
-  color: #FFFFFF;
-  font-weight: 200;
+  color: #222831;
+  font-weight: 700;
+  padding: 10px 10px 0;
 }
 .contactame .form, .contactame input, .contactame textarea {
   margin: 5px 0;
@@ -520,12 +625,16 @@ header .scroll .up {
 }
 .contactame input, .contactame textarea {
   box-sizing: border-box;
-  border: 1px solid #32E0C4;
-  box-shadow: 0px 0px 10px 0px #A3B4B4;
+  border: 1px solid #D5E0E0;
+  box-shadow: 0px 0px 12px 0px #A3B4B4;
   color: #393E46;
+  transition: all 0.3s ease-in-out;
 }
-.contactame input:hover, .contactame input:focus, .contactame textarea:hover, .contactame textarea:focus {
+.contactame input:focus, .contactame textarea:focus {
+  outline: none;
+  border: 1px solid #32E0C4;
   box-shadow: 0px 0px 10px 0px #32E0C4;
+  transition: all 0.3s ease-in-out;
 }
 
 .proyectos input {
@@ -577,11 +686,19 @@ header .scroll .up {
 }
 
 .footer {
+  text-align: center;
   position: relative;
-  top: -40px;
+  top: -30px;
   background-color: #FFFFFF;
-  padding: 20px 0 10px 0;
+  padding: 20px 0 0 0;
   z-index: 1;
+}
+.footer .footer__title {
+  padding: 20px 0 40px 0;
+}
+.footer__img {
+  width: 60px;
+  margin: 0px 30px 30px 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

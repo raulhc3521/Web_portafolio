@@ -38,10 +38,10 @@
 
     <header class="container descripcion">
         <div class="row">
-            <div class="col-4 descripcion__avatar"></div>
-            <div class="col-4"></div>
+            <div class="col-4 descripcion__avatar d-none d-block-md"></div>
+            <div class="col-4 d-none d-block-sm"></div>
 
-            <div class="col-8 descripcion__text">
+            <div class="col-12 col-sm-8 descripcion__text">
                 <h1>Raúl Higueras Caballero</h1>
 
                 <h3><span  class="descripcion__text__uxui">Diseñador UX/UI</span> - <span class="descripcion__text__di">Diseñador Industrial</span></h3>
@@ -205,7 +205,9 @@
                                 <input name="email" class="form-control" type="text">
                                 <p>Mensaje</p>
                                 <textarea name="message" class="form-control" type="text"></textarea>
-                                <button type="submit">Enviar</button>
+                                <div class="button">
+                                    <button type="submit">Enviar</button>
+                                </div>
                             </div>  
                         </div>
                 </div>
@@ -219,9 +221,12 @@
             <div class="row">
                 <div class="col-12">
                     <h4 class="footer__title">Buscame en:</h4>
-                    <i></i>
-                    <i></i>
-                    <i></i>
+                    <div class="footer__RRSS">
+                        <img src="assets/images/linkedin-in-brands.svg" alt="logo linkedin" class="footer__img">
+                        <img src="assets/images/github-brands.svg" alt="logo github" class="footer__img">
+                        <img src="assets/images/instagram-bosquejado.svg" alt="logo instagram" class="footer__img">
+                    </div>
+                    
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam perferendis incidunt totam eius qui consequuntur adipisci voluptates nobis! Ratione doloremque ex dolorem iure architecto esse, autem voluptatibus repellendus! Officia, expedita.</p>
                 </div>
             </div>

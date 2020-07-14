@@ -1,8 +1,17 @@
 // footer
 .footer {
+    text-align: center;
     position: relative;
-    top: -40px;
+    top: -30px;
     background-color: $white;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 0 0;
     z-index: 1;
+    .footer__title {
+        padding: 20px 0 40px 0;
+    }
+    &__img {
+        width: 60px;
+        margin: 0px 30px 30px 30px;
+    }
+   
 }
