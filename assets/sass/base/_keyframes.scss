@@ -19,3 +19,22 @@
         max-height: 100%;
     }
 }
+
+@keyframes arrow {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    20% {
+        top: 10px;
+        opacity: 1;
+    }
+    80% {
+        top: 30px;
+        opacity: 1;
+    }
+    100% {
+        top: 40px;
+        opacity: 0;
+    }
+}

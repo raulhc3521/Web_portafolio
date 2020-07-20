@@ -2,6 +2,7 @@ header {
     padding: 350px 10px;
 
     .descripcion__text {
+        
         .descripcion__text__uxui {
             color: $turquoise;
         }
@@ -40,6 +41,13 @@ header {
         text-align: center;
         box-shadow: 1px 1px 5px rgba($color: #000000, $alpha: .2);
         //transform: rotate(-135deg);
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            bottom: -65px;
+            transition: all .2s ease-in-out;
+            box-shadow: 1px 1px 8px rgba($color: #000000, $alpha: .8);
+        }
         
         .hello {
             padding-bottom: 80px;

@@ -1,3 +1,6 @@
+h1, h2, h3, h4, h5 {
+    margin-bottom: 3px;
+}
 .educacion__title, .experiencia__title, .proyectos__title, .conocimientos__title, .contactame__title, .footer__title {
     text-align: center;
     font-weight: 700;
@@ -6,7 +9,7 @@
 }
 
 .bg {
-    background-color: $cobalt-gray;
+    background-color: $gray;
     transform: skewY(2deg);
     .content {
         transform: skewY(-2deg);
@@ -14,7 +17,7 @@
 }
 
 .bg2 {
-    background-color: $cobalt-gray;
+    background-color: $gray;
     transform: skewY(-2deg);
     .content {
         transform: skewY(2deg);
@@ -32,8 +35,7 @@
 .educacion {
     .educacion__text {
         padding-left: 50px;
-        margin-bottom: 50px;
-        
+                
         &:last-of-type {
             margin-bottom: 0px;
         }
@@ -57,7 +59,6 @@
 .experiencia {
     &__text {
         padding-right: 50px;
-        margin-bottom: 50px;
         
         &:last-of-type {
             margin-bottom: 0px;
@@ -87,6 +88,157 @@
     }
 }
 
+.proyectos {
+
+    input {
+        display: none;
+    }
+
+    &__ux {
+        background-color: $turquoise;
+        transition: all .3s ease-in-out;
+
+        .title {
+            padding-top: 100px;
+            text-align: center;
+            color: $white;
+        }
+
+        &:hover {
+            filter: brightness(105%);
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    &__di {
+        background-color: $violet;
+        transition: all .3s ease-in-out;
+
+        .title {
+            padding-top: 100px;
+            text-align: center;
+            color: $white;
+        }
+
+        &:hover {
+            filter: brightness(110%);
+            transition: all .3s ease-in-out;
+        }
+    }  
+
+    .arrow__container {
+        height: 80px;
+        display: block;
+        margin: 10px auto;
+
+
+        .arrow1, .arrow2 {
+            background-image: url(../images/arrow.svg);
+            width: 40px;
+            height: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 0 auto;
+        }
+        .arrow1 {
+            position: relative;
+            top: 0px;
+            opacity: 1;
+            animation: arrow 1.5s infinite;  
+            animation-timing-function: linear;          
+        }
+
+        
+    }
+
+    .proyectos__desplegable1, .proyectos__desplegable2 {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: height .3s ease-in-out;
+        
+    }
+
+    #desplegable1:checked ~ .proyectos__desplegable1 {
+        height: 600px;
+        transition: height .3s ease-in-out;
+        
+    }
+
+    #desplegable2:checked ~ .proyectos__desplegable2 {
+        height: 600px;
+        transition: height .3s ease-in-out;
+    }
+    
+    
+    
+    .proyectos__proyecto{
+        float: right;
+        overflow: hidden;
+        width: 100%;
+        height: 300px;
+        background-color: $dark;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        transition: all 2s ease-in-out;
+      
+
+        &:hover {
+            background-position: bottom;
+            transition: filter 2s linear;
+            transition: background-position 30s linear;
+            
+        
+        }
+
+        .proyectos__descripcion {
+            background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+            color: $white;
+            float: right;
+            width: 350px;
+            height: 400px;
+            text-align: right;
+            margin-top: -10px;
+            padding: 80px 30px 0 90px;
+
+            p {
+                margin-bottom: 5px;
+            }
+            
+            a {
+                text-decoration: none;
+                color: $turquoise;
+                margin-top: 10px;
+                transition: all .2s ease-in-out;
+
+                &:hover{
+                    padding-right: 5px;
+                    color: violet;
+                    text-decoration: underline $violet;
+                    transition: all .2s ease-in-out;
+                }
+            }
+            
+        }
+    }
+
+    &__proyecto--bg1 {
+        background-image: url(../images/gasconnect_thumb.png);
+    }
+    &__proyecto--bg2 {
+        background-image: url(../images/radio_activa.png);
+    }
+    &__proyecto--bg3 {
+        background-image: url(../images/gasconnect_thumb.png);
+    }
+    &__proyecto--bg4 {
+        background-image: url(../images/radio_activa.png);
+    }
+
+  
+}
 
 .contactame {
     p {
@@ -112,76 +264,22 @@
     input, textarea {
         box-sizing: border-box;
         border: 1px solid $gray;
-        box-shadow:  0px 0px 12px 0px $cobalt-gray;
+        box-shadow:  0px 0px 12px 0px $gray;
         color: $cobalt-dark;
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
+        padding: 5px;
+        background-color: $white;
+        
+        &:active {
+            background-color: $white;
+        }
 
         &:focus {     
             outline: none;    
             border: 1px solid $turquoise;
             box-shadow:  0px 0px 10px 0px $turquoise;
-            transition: all .3s ease-in-out;
+            transition: all .2s ease-in-out;
         } 
     }
     
-}
-
-.proyectos {
-
-    input {
-        display: none;
-    }
-
-    &__ux {
-        background-color: $turquoise;
-        .title {
-            padding: 100px 0;
-            text-align: center;
-            color: $white;
-        }
-    }
-
-    &__di {
-        background-color: $violet;
-        .title {
-            padding: 100px 0;
-            text-align: center;
-            color: $white;
-        }
-    }    
-
-    .proyectos__desplegable1, .proyectos__desplegable2 {
-        height: 0;
-        padding: 0;
-        overflow: hidden;
-        transition: height .3s ease-in-out;
-    }
-
-    #desplegable1:checked ~ .proyectos__desplegable1 {
-        height: 600px;
-        transition: height .3s ease-in-out;
-        
-    }
-    #desplegable2:checked ~ .proyectos__desplegable2 {
-        height: 600px;
-        transition: height .3s ease-in-out;
-    }
-    
-    
-    .proyectos__proyecto{
-        float: right;
-        overflow: hidden;
-        width: 100%;
-        height: 300px;
-        background-color: $gray;
-        .proyectos__descripcion {
-            float: right;
-            width: 250px;
-            height: 200px;
-            text-align: right;
-            margin: 80px 30px 0 0;
-        }
-    }
-
-  
 }
