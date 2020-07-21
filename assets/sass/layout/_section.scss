@@ -197,27 +197,29 @@ h1, h2, h3, h4, h5 {
             background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
             color: $white;
             float: right;
-            width: 350px;
+            width: 300px;
             height: 400px;
             text-align: right;
             margin-top: -10px;
             padding: 80px 30px 0 90px;
 
             p {
-                margin-bottom: 5px;
+                margin-bottom: 15px;
             }
             
             a {
                 text-decoration: none;
                 color: $turquoise;
-                margin-top: 10px;
                 transition: all .2s ease-in-out;
+                border: 2px solid $turquoise;
+                border-radius: 5px;
+                padding: 3px 5px;
 
                 &:hover{
                     padding-right: 5px;
                     color: violet;
-                    text-decoration: underline $violet;
                     transition: all .2s ease-in-out;
+                    border: 2px solid $violet;
                 }
             }
             

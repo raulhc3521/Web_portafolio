@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     z-index: 4;
-    //border: 1px solid $dark;
+    transition: all .3s ease-in-out;
 }
 
 .navbar .container {
@@ -22,7 +22,11 @@
     left: -60px;
     top: 5px;
     color: $turquoise;
+    transition: all .2s ease-in-out;
 
+    &:hover {
+        color: $turquoise;
+    }
 }
 
 .navbar__text--inactive {
@@ -30,4 +34,31 @@
     padding-top: 10px;
     font-size: $h5-size;
     color: $dark;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: $turquoise;
+    }
+}
+
+.nav_scroll {
+    background-color: $dark;
+    transition: all .2s ease-in-out;
+    
+    .navbar__text--inactive {
+        color: $white !important;
+        &:hover {
+            color: $turquoise !important;
+        }
+    }
+    .navbar__text-title--active {
+        left: 0;
+        top: 10px;
+        font-size: $h5-size;
+        color: $white !important;
+        &:hover {
+            color: $turquoise !important;
+        }
+        
+    }
 }

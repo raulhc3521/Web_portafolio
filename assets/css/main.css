@@ -138,6 +138,16 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     opacity: 0;
   }
 }
+@keyframes rotate_avatar {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -100px;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes rotate_scrollup {}
 button {
   display: block;
   background-color: #2fc4ab;
@@ -152,7 +162,7 @@ button {
   transition: all 0.2s ease-in-out;
 }
 button:hover {
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in-out;
 }
 
@@ -485,6 +495,7 @@ button:hover {
   position: fixed;
   top: 0;
   z-index: 4;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar__text-title--active {
@@ -495,6 +506,10 @@ button:hover {
   left: -60px;
   top: 5px;
   color: #2fc4ab;
+  transition: all 0.2s ease-in-out;
+}
+.navbar__text-title--active:hover {
+  color: #2fc4ab;
 }
 
 .navbar__text--inactive {
@@ -502,10 +517,40 @@ button:hover {
   padding-top: 10px;
   font-size: 16px;
   color: #222831;
+  transition: all 0.2s ease-in-out;
+}
+.navbar__text--inactive:hover {
+  color: #2fc4ab;
+}
+
+.nav_scroll {
+  background-color: #222831;
+  transition: all 0.2s ease-in-out;
+}
+.nav_scroll .navbar__text--inactive {
+  color: #FFFFFF !important;
+}
+.nav_scroll .navbar__text--inactive:hover {
+  color: #2fc4ab !important;
+}
+.nav_scroll .navbar__text-title--active {
+  left: 0;
+  top: 10px;
+  font-size: 16px;
+  color: #FFFFFF !important;
+}
+.nav_scroll .navbar__text-title--active:hover {
+  color: #2fc4ab !important;
 }
 
 header {
-  padding: 350px 10px;
+  padding: 100px 10px 100px 20px;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 350px 10px;
+  }
 }
 header .descripcion__text .descripcion__text__uxui {
   color: #2fc4ab;
@@ -514,19 +559,40 @@ header .descripcion__text .descripcion__text__di {
   color: #b345db;
 }
 header .descripcion__avatar {
+  transition: all 0.3s ease-in-out;
   position: fixed;
-  top: 30vh;
-  left: -400px;
-  height: 400px;
-  width: 400px;
+  top: 320px;
+  left: 0;
+  height: 30vw;
+  width: 30vw;
+  max-width: 350px;
+  max-height: 350px;
   background-color: #2fc4ab;
+  background-image: url(../images/foto_perfil.jpg);
   opacity: 1;
-  transform: rotate(-45deg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 250%;
   z-index: 2;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 768px) {
+  header .descripcion__avatar {
+    left: 4vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header .descripcion__avatar {
+    top: 250px;
+    left: 6vw;
+  }
+}
+header .descripcion__avatar .box_avatar {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2fc4ab;
+  transition: all 0.3s ease-in-out;
 }
 header .scroll {
   background-color: #b345db;
@@ -539,13 +605,13 @@ header .scroll {
   color: #FFFFFF;
   padding: 15px 0 5px;
   text-align: center;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 }
 header .scroll:hover {
   bottom: -65px;
   transition: all 0.2s ease-in-out;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 header .scroll .hello {
   padding-bottom: 80px;
@@ -554,6 +620,25 @@ header .scroll .up {
   transform: rotate(135deg);
   text-align: left;
   margin-bottom: -20px;
+}
+
+.rotate_avatar {
+  transition: all 0.6s ease-in-out;
+  transform: rotate(-45deg);
+  left: -280px !important;
+}
+@media only screen and (min-width: 1200px) {
+  .rotate_avatar {
+    left: -300px !important;
+  }
+}
+.rotate_avatar .box_avatar {
+  opacity: 1 !important;
+}
+
+.rotate_scrollup {
+  transform: rotate(-135deg);
+  bottom: -90px !important;
 }
 
 h1, h2, h3, h4, h5 {
@@ -724,26 +809,28 @@ h1, h2, h3, h4, h5 {
   background: linear-gradient(to left, black, rgba(0, 0, 0, 0));
   color: #FFFFFF;
   float: right;
-  width: 350px;
+  width: 300px;
   height: 400px;
   text-align: right;
   margin-top: -10px;
   padding: 80px 30px 0 90px;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion p {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion a {
   text-decoration: none;
   color: #2fc4ab;
-  margin-top: 10px;
   transition: all 0.2s ease-in-out;
+  border: 2px solid #2fc4ab;
+  border-radius: 5px;
+  padding: 3px 5px;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion a:hover {
   padding-right: 5px;
   color: violet;
-  text-decoration: underline #b345db;
   transition: all 0.2s ease-in-out;
+  border: 2px solid #b345db;
 }
 .proyectos__proyecto--bg1 {
   background-image: url(../images/gasconnect_thumb.png);
@@ -809,6 +896,13 @@ h1, h2, h3, h4, h5 {
   color: #393E46;
   font-size: 60px;
   margin: 0px 30px 20px;
+}
+.footer__RRSS i {
+  transition: all 0.2s ease-in-out;
+}
+.footer__RRSS i:hover {
+  transition: all 0.2s ease-in-out;
+  color: #2fc4ab;
 }
 
 /*# sourceMappingURL=main.css.map */

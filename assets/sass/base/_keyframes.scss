@@ -38,3 +38,17 @@
         opacity: 0;
     }
 }
+
+@keyframes rotate_avatar {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -100px;
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes rotate_scrollup {
+    
+}
