@@ -1,3 +1,4 @@
+//Funcione de rotacion
 function rotate() {
     var avatar = document.querySelector('.descripcion__avatar');
     var scrollup = document.querySelector('.scroll');
@@ -15,4 +16,6 @@ function rotate() {
 }
 
 window.addEventListener("scroll", rotate);
+
+//Funcion smooth scroll
 

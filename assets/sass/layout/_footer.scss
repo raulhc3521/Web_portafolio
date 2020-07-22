@@ -12,8 +12,15 @@
     &__img {
         color: $cobalt-dark;
         font-size: 60px;
-        margin: 0px 30px 20px;
+        margin: 0px 15px 20px;
     }
+
+    @media only screen and (min-width: 768px) {
+            .footer__img {
+                margin: 0px 30px 20px;
+            }
+    }
+
    &__RRSS {
         i {
             transition: all .2s ease-in-out;
@@ -22,6 +29,6 @@
                 color: $turquoise;
                }
         }
-        
+                
    }
 }

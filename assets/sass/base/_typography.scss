@@ -1,5 +1,7 @@
 h1, h2, h3, h4, h5, p, a, button, input, textarea {
     font-family: $Comfortaa;
+    padding-bottom: 3px;
+    color: $dark;
 }
 
 a, button {
@@ -12,23 +14,30 @@ h1, h2, h3, h4, h5, p {
 
 h1 {
     font-size: $h1-size;
+    padding-bottom: 15px;
+    line-height: 40px;
 }
 h2 {
     font-size: $h2-size;
+    line-height: 30px;
 }
 h3 {
     font-size: $h3-size;
     font-weight: $bold;
+    line-height: 28px;
 }
 h4 {
     font-size: $h4-size;
+    line-height: 22px;
 }
 h5 {
     font-size: $h5-size;
-    line-height: 18px;
+    line-height: 22px;
+    
 }
 p {
     font-size: $p-size;
+    line-height: 22px;
 }
 a {
     font-size: $a-size;

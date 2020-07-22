@@ -23,8 +23,8 @@
 </head>
 <body>
 
-    <nav class="navbar ">
-        <div class="container">
+    <nav class="navbar">
+        <div class="container d-none d-block-xl">
             <div class="row">
                 <div class="col-2">
                     <a href="#" class="navbar__text-title--active">Raúl Higueras</a>
@@ -34,7 +34,23 @@
                 <a href="#" class="navbar__text--inactive col-2">Proyectos</a>
                 <a href="#" class="navbar__text--inactive col-2">Conocimientos</a>
                 <a href="#" class="navbar__text--inactive col-2">Contacto</a>
-            </div> 
+            </div>
+        </div>
+
+        <div class="container-fluid d-none-xl">
+
+            <label for="nav__desplegable"><h4 class="navbar__text-title-desplegable">Raúl Higueras</h4><div class="burger"><h4 class="burger">|||</h4></div></label>
+            
+            <input type="checkbox" id="nav__desplegable">
+            
+            <div class="row desplegable_nav">
+                <a href="#" class="navbar__text--inactive col-12">Descripción</a>
+                <a href="#" class="navbar__text--inactive col-12">Educación</a>
+                <a href="#" class="navbar__text--inactive col-12">Experiencia</a>
+                <a href="#" class="navbar__text--inactive col-12">Proyectos</a>
+                <a href="#" class="navbar__text--inactive col-12">Conocimientos</a>
+                <a href="#" class="navbar__text--inactive col-12">Contacto</a>
+            </div>
         </div>
                
     </nav>
@@ -57,7 +73,7 @@
             </div>
 
         </div> 
-        <div class="scroll">
+        <div class="scroll d-none d-block-sm">
             <h5 class="hello">hello</h5>
             <h5 class="up">up</h5>
         </div>       
@@ -69,18 +85,17 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="educacion__img col-12 col-md-3"></div>
-                    <div class="educacion__text col-12 col-md-9">
+                    <div class="educacion__img col-12 col-md-4"></div>
+                    <div class="educacion__text col-12 col-md-8">
                         <h3>Universidada Tecnológica Metropolitana</h3>
-                        <h4>Diseño Industrial</h4>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vel culpa obcaecati optio earum iste aliquid modi perspiciatis? Ipsa quos obcaecati ab exercitationem nostrum vitae nemo maxime ipsam mollitia veniam.</h5>
+                        <h4>Diseño Industrial | 2010 - 2016</h4>
                     </div>
+                    <hr class="col-12">
 
-                    <div class="educacion__img2 col-12 col-md-3"></div>
-                    <div class="educacion__text col-12 col-md-9">
+                    <div class="educacion__img2 col-12 col-md-4"></div>
+                    <div class="educacion__text col-12 col-md-8">
                         <h3>Desafío Latam</h3>
-                        <h4>Diseño UX/UI</h4>
-                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque a molestias voluptate. Ex et sit nam eligendi, obcaecati officiis neque laborum! Modi ex dignissimos sapiente nesciunt numquam dolorem, quae accusantium?</h5>
+                        <h4>Diseño UX/UI | 2019-2020</h4>
                     </div>
 
                 </div>
@@ -95,26 +110,31 @@
         <div class="container">
             <div class="row">
 
+                <div class="experiencia__img d-none-lg col-12 col-md-3"></div>
                 <div class="experiencia__text col-12 col-md-9">
                     <h3>ProteinLab</h3>
-                    <h4>Diseño Industrial</h4>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo vel culpa obcaecati optio earum iste aliquid modi perspiciatis? Ipsa quos obcaecati ab exercitationem nostrum vitae nemo maxime ipsam mollitia veniam.</h5>
+                    <h4>Diseñador de productos de innovación social y tecnológica | 2016-2017</h4>
+                    <h5>Encargado del Diseño y prototipado de productos, pasando por la utilización de metodologías de Diseño Industrial, testeos y fabricación digital para prototipos.</h5>
                 </div>
-                <div class="experiencia__img col-12 col-md-3"></div>
+                <div class="experiencia__img d-none d-block-lg col-12 col-md-3"></div>
+                <hr class="col-12">
 
+                <div class="experiencia__img2 d-none-lg col-12 col-md-3"></div>
                 <div class="experiencia__text col-12 col-md-9">
                     <h3>Adario</h3>
-                    <h4>Proyecto TSF - StartUp Chile - Corfo</h4>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque a molestias voluptate. Ex et sit nam eligendi, obcaecati officiis neque laborum! Modi ex dignissimos sapiente nesciunt numquam dolorem, quae accusantium?</h5>
+                    <h4>Diseñador Industrial y Director de Operaciones | 2017-2018</h4>
+                    <h5>Proyecto financiado por Corfo y Start-UP Chile bajo el programa The S Factory Gen7. Encargado del Diseño Industrial, prototipado de productos mediante fabricación digital, Administración, análisis de mercado, pricing y estrategias de venta.</h5>
                 </div>
-                <div class="experiencia__img2 col-12 col-md-3"></div>
+                <div class="experiencia__img2 d-none d-block-lg col-12 col-md-3"></div>
+                <hr class="col-12">
 
+                <div class="experiencia__img3 d-none-lg col-12 col-md-3"></div>
                 <div class="experiencia__text col-12 col-md-9">
                     <h3>Universidada Tecnológica Metropolitana</h3>
-                    <h4>Diseño UX/UI</h4>
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque a molestias voluptate. Ex et sit nam eligendi, obcaecati officiis neque laborum! Modi ex dignissimos sapiente nesciunt numquam dolorem, quae accusantium?</h5>
+                    <h4>Diseñador Industrial | 2019</h4>
+                    <h5>Operador de maquinarias de fabricación digital e instructor en capacitacion de alumnos para el uso de maquinaria de fabricación digital.</h5>
                 </div>
-                <div class="experiencia__img3 col-12 col-md-3"></div>
+                <div class="experiencia__img3 d-none d-block-lg col-12 col-md-3"></div>
 
             </div>
 
@@ -175,7 +195,7 @@
                      <div class="proyectos__proyecto proyectos__proyecto--bg3">
                          <div class="proyectos__descripcion content">
                              <h3>Adario</h3>
-                             <h5>Proyecto Corfo - The S Factory - StartUp Chile</h5>
+                             <h5>Proyecto Corfo - StartUp Chile</h5>
                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem quae itaque repellat, aliquam fuga reiciendis quam iusto eaque perspiciatis, quas enim ipsa dolorum nulla aperiam nemo quo temporibus nostrum.</p>
                              <a href="#">Ver Más</a>
                          </div>
