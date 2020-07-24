@@ -136,6 +136,11 @@ hr {
     &__di {
         background-color: $violet;
         transition: all .3s ease-in-out;
+        background-image: url(../images/plint.svg);
+        background-repeat: no-repeat;
+        background-position-y: -100px;
+        background-position-x: center;
+        background-size: 60vh;
 
         .title {
             padding-top: 100px;
@@ -147,7 +152,15 @@ hr {
             filter: brightness(110%);
             transition: all .3s ease-in-out;
         }
-    }  
+    } 
+    
+    @media only screen and (min-width: 992px) {
+        .proyectos__di, .proyectos__ux {
+            background-size: 80vh;
+            background-position-y: -190px;
+            background-position-x: center;
+        }
+    }
 
     .arrow__container {
         height: 80px;

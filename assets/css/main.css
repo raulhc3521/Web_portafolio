@@ -831,6 +831,11 @@ hr {
 .proyectos__di {
   background-color: #b345db;
   transition: all 0.3s ease-in-out;
+  background-image: url(../images/plint.svg);
+  background-repeat: no-repeat;
+  background-position-y: -100px;
+  background-position-x: center;
+  background-size: 60vh;
 }
 .proyectos__di .title {
   padding-top: 100px;
@@ -840,6 +845,13 @@ hr {
 .proyectos__di:hover {
   filter: brightness(110%);
   transition: all 0.3s ease-in-out;
+}
+@media only screen and (min-width: 992px) {
+  .proyectos .proyectos__di, .proyectos .proyectos__ux {
+    background-size: 80vh;
+    background-position-y: -190px;
+    background-position-x: center;
+  }
 }
 .proyectos .arrow__container {
   height: 80px;
