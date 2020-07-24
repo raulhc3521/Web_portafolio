@@ -1,3 +1,9 @@
+html {
+    scroll-behavior: smooth;
+    transition: all 5s ease-in-out;
+
+}
+
 header {
     padding: 100px 10px 100px 20px;
     transition: all .2s ease-in-out;

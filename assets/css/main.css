@@ -54,7 +54,7 @@ table {
 }
 
 h1, h2, h3, h4, h5, p, a, button, input, textarea {
-  font-family: "Comfortaa", "Open Sans", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   padding-bottom: 3px;
   color: #222831;
 }
@@ -106,7 +106,7 @@ a {
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill::first-line {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
-  font-family: "Comfortaa", "Open Sans", sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 @keyframes opacidad {
@@ -599,6 +599,11 @@ button:hover {
 }
 .nav_scroll .navbar__text-title--active:hover {
   color: #2fc4ab !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: all 5s ease-in-out;
 }
 
 header {

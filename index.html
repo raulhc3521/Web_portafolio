@@ -6,8 +6,7 @@
     <title>Raúl Higueras | Diseñador UX/UI - Diseñador Industrial</title>
 
     <!-- google fonts -->
-    <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- estilo CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -18,7 +17,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/be26ab9caa.js"></script>
 
-    
+        
 
 </head>
 <body>
@@ -27,13 +26,13 @@
         <div class="container d-none d-block-xl">
             <div class="row">
                 <div class="col-2">
-                    <a href="#" class="navbar__text-title--active">Raúl Higueras</a>
+                    <a href="#descripcion" class="navbar__text-title--active">Raúl Higueras</a>
                 </div>
-                <a href="#" class="navbar__text--inactive col-2">Educación</a>
-                <a href="#" class="navbar__text--inactive col-2">Experiencia</a>
-                <a href="#" class="navbar__text--inactive col-2">Proyectos</a>
-                <a href="#" class="navbar__text--inactive col-2">Conocimientos</a>
-                <a href="#" class="navbar__text--inactive col-2">Contacto</a>
+                <a href="#educacion" class="navbar__text--inactive col-2">Educación</a>
+                <a href="#experiencia" class="navbar__text--inactive col-2">Experiencia</a>
+                <a href="#proyectos" class="navbar__text--inactive col-2">Proyectos</a>
+                <a href="#conocimientos" class="navbar__text--inactive col-2">Conocimientos</a>
+                <a href="#contacto" class="navbar__text--inactive col-2">Contacto</a>
             </div>
         </div>
 
@@ -43,21 +42,21 @@
             
             <input type="checkbox" id="nav__desplegable">
             
-            <div class="row desplegable_nav">
-                <a href="#" class="navbar__text--inactive col-12">Descripción</a>
-                <a href="#" class="navbar__text--inactive col-12">Educación</a>
-                <a href="#" class="navbar__text--inactive col-12">Experiencia</a>
-                <a href="#" class="navbar__text--inactive col-12">Proyectos</a>
-                <a href="#" class="navbar__text--inactive col-12">Conocimientos</a>
-                <a href="#" class="navbar__text--inactive col-12">Contacto</a>
-            </div>
+            <label for="nav__desplegable" class="row desplegable_nav">
+                <a href="#descripcion" class="navbar__text--inactive col-12">Descripción</a>
+                <a href="#educacion" class="navbar__text--inactive col-12">Educación</a>
+                <a href="#experiencia" class="navbar__text--inactive col-12">Experiencia</a>
+                <a href="#proyectos" class="navbar__text--inactive col-12">Proyectos</a>
+                <a href="#conocimientos" class="navbar__text--inactive col-12">Conocimientos</a>
+                <a href="#contacto" class="navbar__text--inactive col-12">Contacto</a>
+            </label>
         </div>
                
     </nav>
 
 
     
-    <header class="container descripcion">
+    <header id="descripcion" class="container descripcion">
         <div class="row">
             <div class="col-4 descripcion__avatar d-none d-block-md">
                 <div class="box_avatar"></div>
@@ -73,13 +72,13 @@
             </div>
 
         </div> 
-        <div class="scroll d-none d-block-sm">
+        <a href="#descripcion" class="scroll d-none d-block-sm">
             <h5 class="hello">hello</h5>
             <h5 class="up">up</h5>
-        </div>       
+        </a>       
     </header>
 
-    <section class="educacion bg">
+    <section id="educacion" class="educacion bg">
         <div class="content">
             <h2 class="educacion__title">Educación</h2>
             <div class="container">
@@ -105,7 +104,7 @@
                 
     </section>
 
-    <section class="experiencia">
+    <section id="experiencia" class="experiencia">
         <h2 class="experiencia__title">Experiencia</h2>
         <div class="container">
             <div class="row">
@@ -141,7 +140,7 @@
         </div>        
     </section>
 
-    <section class="proyectos bg2">
+    <section id="proyectos" class="proyectos bg2">
         <div class="content">
             <h2 class="proyectos__title">Proyectos</h2>
         </div>
@@ -216,7 +215,7 @@
                
     </section>
 
-    <section class="conocimientos">
+    <section id="conocimientos" class="conocimientos">
         <h2 class="conocimientos__title">Conocimientos</h2>
         <div class="container">
             <div class="row">
@@ -229,7 +228,7 @@
         </div>        
     </section>
     
-    <section class="contactame bg2">
+    <section id="contacto" class="contactame bg2">
         <div class="content">
             <h2 class="contactame__title">Contáctame</h2>
             <form target="_blank" action="https://formsubmit.co/a4a97edadacab3065ee8a00c9bdfc62e" method="POST" class="">
@@ -274,6 +273,6 @@
         
         
     </footer>
-    
+
 </body>
 </html>
