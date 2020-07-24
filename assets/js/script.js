@@ -14,5 +14,10 @@ function rotate() {
         navbar.classList.remove("nav_scroll");
     }
 }
-
 window.addEventListener("scroll", rotate);
+
+
+//Función uncheck
+function uncheck() {
+    document.getElementById("nav__desplegable").checked = false;
+}
