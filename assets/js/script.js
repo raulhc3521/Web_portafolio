@@ -17,7 +17,7 @@ function rotate() {
 window.addEventListener("scroll", rotate);
 
 
-//Función uncheck
+//Función uncheck //
 function uncheck() {
     document.getElementById("nav__desplegable").checked = false;
 }
