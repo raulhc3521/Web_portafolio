@@ -15,7 +15,11 @@
 }
 
 .d-flex {
-    display: flex;
+    display: flex;  
+}
+
+.select-none {
+    user-select: none;
 }
 
 

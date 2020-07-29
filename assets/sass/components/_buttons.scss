@@ -6,11 +6,20 @@
     float: right;
     border-radius: 0 10px 0 10px;
     border: none;
-    background-color: rgb(233, 98, 98);
+    background-color: rgb(231, 63, 63);
     text-align: center;
     color: $white;  
     height: 40px;
-    width: 50px;    
+    width: 50px; 
+    outline: none;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: rgb(209, 1, 1);
+        transition: all .2s ease-in-out;
+    }
+    
+    
     
     @media only screen and (min-width: 768px){
         position: relative;
@@ -32,6 +41,7 @@
     font-weight: 700;
     box-shadow: 1px 1px 2px rgba($color: #000000, $alpha: .2);
     transition: all .2s ease-in-out;
+    outline: none;
 
     &:hover {
         box-shadow: 1px 2px 8px rgba($color: #000000, $alpha: .5);

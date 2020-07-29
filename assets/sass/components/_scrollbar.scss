@@ -6,15 +6,15 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: $white; 
+    background-color: $white; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: $cobalt-gray; 
+    background-color: $cobalt-gray; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: $dark; 
+    background-color: $dark; 
   }

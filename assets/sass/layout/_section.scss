@@ -110,11 +110,12 @@ hr {
         }
     }
 }
-.modal-1 {
+.modal-1, .modal-2, .modal-3, .modal-4 {
     transition: all .4s ease-in-out;
     visibility: hidden;
     opacity: 0;
 }
+
 .modal {
     position: fixed;
     display: flex;

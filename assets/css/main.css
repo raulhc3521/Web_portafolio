@@ -141,11 +141,17 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   float: right;
   border-radius: 0 10px 0 10px;
   border: none;
-  background-color: #e96262;
+  background-color: #e73f3f;
   text-align: center;
   color: #FFFFFF;
   height: 40px;
   width: 50px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+.modal__close:hover {
+  background-color: #d10101;
+  transition: all 0.2s ease-in-out;
 }
 @media only screen and (min-width: 768px) {
   .modal__close {
@@ -167,6 +173,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   font-weight: 700;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
+  outline: none;
 }
 .contactame button:hover {
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
@@ -180,17 +187,17 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #A3B4B4;
+  background-color: #A3B4B4;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #222831;
+  background-color: #222831;
 }
 
 .d-none {
@@ -211,6 +218,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .d-flex {
   display: flex;
+}
+
+.select-none {
+  user-select: none;
 }
 
 @media only screen and (min-width: 576px) {
@@ -835,7 +846,7 @@ hr {
   }
 }
 
-.modal-1 {
+.modal-1, .modal-2, .modal-3, .modal-4 {
   transition: all 0.4s ease-in-out;
   visibility: hidden;
   opacity: 0;
