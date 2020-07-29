@@ -1,5 +1,26 @@
+.modal__close{ 
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;   
+    float: right;
+    border-radius: 0 10px 0 10px;
+    border: none;
+    background-color: rgb(233, 98, 98);
+    text-align: center;
+    color: $white;  
+    height: 40px;
+    width: 50px;    
+    
+    @media only screen and (min-width: 768px){
+        position: relative;
+        margin-top: 10px;
+    }
 
-button {
+}
+
+.contactame button {
+    cursor: pointer;
     display: block;
     background-color: $turquoise;
     width: 150px;

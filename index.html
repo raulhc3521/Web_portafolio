@@ -11,8 +11,7 @@
     <!-- estilo CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- Script propio -->
-    <script src="assets/js/script.js"></script>
+    
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/be26ab9caa.js"></script>
@@ -21,6 +20,27 @@
 
 </head>
 <body>
+
+    <!-- modales -->
+    <div class="modal modal-1">
+
+        <button for="close" onclick="close_modal()" class="modal__close d-none-md">X</button>
+
+        <div class="modal__conjunto">
+            <div class="modal--overflow">
+                <div class="modal__contenido">    
+                    <h2>Gasconnect</h2>
+                    <img src="assets/images/gasconnect.png" alt="">                
+                    <h4>subtitulo</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi libero corporis nulla repellendus, eum nostrum atque consectetur non ex aliquam dolorum natus dolores, sint in obcaecati soluta, nesciunt cupiditate cum!</p>
+                </div>
+            </div>
+
+            <button for="close" onclick="close_modal()" class="modal__close d-none d-block-md">X</button>
+
+        </div>
+        
+    </div>
 
     <nav class="navbar">
         <div class="container d-none d-block-xl">
@@ -163,7 +183,8 @@
                                 <h3>Gasconnect</h3>
                                 <h5>2020 - Desafío Latam</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem quae itaque repellat, aliquam fuga reiciendis quam iusto eaque perspiciatis, quas enim ipsa dolorum nulla aperiam nemo quo temporibus nostrum.</p>
-                                <a href="#">Ver Más</a>
+                                <a class="link_modal1" onclick="open_modal1()">Ver Más</a>
+                                
                             </div>
                         </div>
 
@@ -273,6 +294,7 @@
         
         
     </footer>
-
+    <!-- Script propio -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

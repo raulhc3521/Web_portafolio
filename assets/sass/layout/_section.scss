@@ -110,8 +110,60 @@ hr {
         }
     }
 }
+.modal-1 {
+    transition: all .4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.modal {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    transition: all .4s ease-in-out;
 
-.proyectos {
+    .modal__conjunto {
+        margin: auto;
+    }
+
+    .modal--overflow {
+        background-color: $white;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 10px;
+        max-width: 600px;
+        height: 85vh;
+        padding-bottom: 30px;
+        display: inline-block;
+    }
+    .modal__contenido {
+        overflow: auto;
+        height: 100%;
+        padding: 30px;
+
+        h2 {
+            text-align: center;
+        }
+
+        h2, h4, p, img {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    
+    
+}
+
+.proyectos {    
+    label {
+        cursor: pointer;
+    }
 
     input {
         display: none;
@@ -217,15 +269,13 @@ hr {
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
-        transition: all 2s ease-in-out;
+        transition: all 50s ease-in-out;
       
 
         &:hover {
             background-position: bottom;
             transition: filter 2s linear;
-            transition: background-position 30s linear;
-            
-        
+            transition: background-position 100s linear;    
         }
 
         .proyectos__descripcion {
@@ -234,28 +284,29 @@ hr {
             width: 300px;
             height: 400px;
             text-align: right;
-            margin-top: -10px;
-            padding: 80px 30px 0 90px;
+            padding: 45px 30px 0 90px;
 
             h3, h5 {
                 color: $white;
             }
 
             p {
-                margin-bottom: 15px;
+                margin-bottom: 5px;
                 color: $white;
             }
             
             a {
+                cursor: pointer;
+                display: inline-block;
                 text-decoration: none;
                 color: $turquoise;
                 transition: all .2s ease-in-out;
                 border: 2px solid $turquoise;
                 border-radius: 5px;
-                padding: 3px 5px;
+                padding: 5px 7px;
 
                 &:hover{
-                    padding-right: 5px;
+                    margin-right: 5px;
                     color: violet;
                     transition: all .2s ease-in-out;
                     border: 2px solid $violet;

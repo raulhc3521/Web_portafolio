@@ -61,6 +61,8 @@ h1, h2, h3, h4, h5, p, a, button, input, textarea {
 
 a, button {
   font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -99,35 +101,11 @@ p {
   line-height: 22px;
 }
 
-a {
-  font-size: 14px;
-  text-decoration: none;
-}
-
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill::first-line {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
   font-family: "Comfortaa", sans-serif;
 }
 
-@keyframes opacidad {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes desplegado {
-  0% {
-    max-height: 0%;
-  }
-  50% {
-    max-height: 40%;
-  }
-  100% {
-    max-height: 100%;
-  }
-}
 @keyframes arrow {
   0% {
     top: 0;
@@ -155,8 +133,29 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     transform: rotate(-45deg);
   }
 }
-@keyframes rotate_scrollup {}
-button {
+.modal__close {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  float: right;
+  border-radius: 0 10px 0 10px;
+  border: none;
+  background-color: #e96262;
+  text-align: center;
+  color: #FFFFFF;
+  height: 40px;
+  width: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .modal__close {
+    position: relative;
+    margin-top: 10px;
+  }
+}
+
+.contactame button {
+  cursor: pointer;
   display: block;
   background-color: #2fc4ab;
   width: 150px;
@@ -169,9 +168,29 @@ button {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 }
-button:hover {
+.contactame button:hover {
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #A3B4B4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #222831;
 }
 
 .d-none {
@@ -188,6 +207,10 @@ button:hover {
 
 .d-inline-block {
   display: inline-block;
+}
+
+.d-flex {
+  display: flex;
 }
 
 @media only screen and (min-width: 576px) {
@@ -812,6 +835,53 @@ hr {
   }
 }
 
+.modal-1 {
+  transition: all 0.4s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  transition: all 0.4s ease-in-out;
+}
+.modal .modal__conjunto {
+  margin: auto;
+}
+.modal .modal--overflow {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  max-width: 600px;
+  height: 85vh;
+  padding-bottom: 30px;
+  display: inline-block;
+}
+.modal .modal__contenido {
+  overflow: auto;
+  height: 100%;
+  padding: 30px;
+}
+.modal .modal__contenido h2 {
+  text-align: center;
+}
+.modal .modal__contenido h2, .modal .modal__contenido h4, .modal .modal__contenido p, .modal .modal__contenido img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.proyectos label {
+  cursor: pointer;
+}
 .proyectos input {
   display: none;
 }
@@ -897,12 +967,12 @@ hr {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  transition: all 2s ease-in-out;
+  transition: all 50s ease-in-out;
 }
 .proyectos .proyectos__proyecto:hover {
   background-position: bottom;
   transition: filter 2s linear;
-  transition: background-position 30s linear;
+  transition: background-position 100s linear;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion {
   background: linear-gradient(to left, black, rgba(0, 0, 0, 0));
@@ -910,26 +980,27 @@ hr {
   width: 300px;
   height: 400px;
   text-align: right;
-  margin-top: -10px;
-  padding: 80px 30px 0 90px;
+  padding: 45px 30px 0 90px;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion h3, .proyectos .proyectos__proyecto .proyectos__descripcion h5 {
   color: #FFFFFF;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion p {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: #FFFFFF;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion a {
+  cursor: pointer;
+  display: inline-block;
   text-decoration: none;
   color: #2fc4ab;
   transition: all 0.2s ease-in-out;
   border: 2px solid #2fc4ab;
   border-radius: 5px;
-  padding: 3px 5px;
+  padding: 5px 7px;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion a:hover {
-  padding-right: 5px;
+  margin-right: 5px;
   color: violet;
   transition: all 0.2s ease-in-out;
   border: 2px solid #b345db;

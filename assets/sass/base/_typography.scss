@@ -6,6 +6,8 @@ h1, h2, h3, h4, h5, p, a, button, input, textarea {
 
 a, button {
     font-weight: $bold;
+    font-size: $a-size;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -39,10 +41,7 @@ p {
     font-size: $p-size;
     line-height: 22px;
 }
-a {
-    font-size: $a-size;
-    text-decoration: none;
-}
+
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill::first-line {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
