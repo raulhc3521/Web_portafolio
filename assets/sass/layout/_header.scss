@@ -56,13 +56,10 @@ header {
             background-color: $turquoise;
             transition: all .3s ease-in-out;
         }
-
-        
-        
-
     }
 
     .scroll {
+        -webkit-tap-highlight-color: transparent;
         background-color: $violet;
         position: fixed;
         bottom: -75px;

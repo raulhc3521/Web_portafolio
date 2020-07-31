@@ -161,7 +161,8 @@ hr {
     
 }
 
-.proyectos {    
+.proyectos {   
+    -webkit-tap-highlight-color: transparent; 
     label {
         cursor: pointer;
     }
@@ -172,7 +173,7 @@ hr {
 
     &__ux {
         background-color: $turquoise;
-        transition: all .3s ease-in-out;
+        transition: all .5s ease-in-out;
 
         .title {
             padding-top: 100px;
@@ -188,7 +189,7 @@ hr {
 
     &__di {
         background-color: $violet;
-        transition: all .3s ease-in-out;
+        transition: all .5s ease-in-out;
         background-image: url(../images/plint.svg);
         background-repeat: no-repeat;
         background-position-y: -100px;
@@ -245,18 +246,18 @@ hr {
         height: 0;
         padding: 0;
         overflow: hidden;
-        transition: height .3s ease-in-out;
+        transition: height .6s ease-in-out;
         
     }
 
     #desplegable1:checked ~ .proyectos__desplegable1 {
         height: 600px;
-        transition: height .3s ease-in-out;        
+        transition: height .6s ease-in-out;        
     }
 
     #desplegable2:checked ~ .proyectos__desplegable2 {
         height: 600px;
-        transition: height .3s ease-in-out;
+        transition: height .6s ease-in-out;
     }
     
     
@@ -285,7 +286,8 @@ hr {
             width: 300px;
             height: 400px;
             text-align: right;
-            padding: 45px 30px 0 90px;
+            padding: 60px 30px 0 90px;
+            margin-top: -15px;
 
             h3, h5 {
                 color: $white;
