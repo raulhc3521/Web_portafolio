@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, p, a, button, input, textarea {
+h1, h2, h3, h4, h5, p, a, button, input, textarea, li, figcaption {
     font-family: $Comfortaa;
     padding-bottom: 3px;
     color: $dark;
@@ -7,7 +7,13 @@ h1, h2, h3, h4, h5, p, a, button, input, textarea {
 a, button {
     font-weight: $bold;
     font-size: $a-size;
-    text-decoration: none;
+    text-decoration: underline;
+    color: $turquoise;
+    transition: all .2s ease-in-out;
+    &:hover {
+        color: $violet;
+        transition: all .2s ease-in-out;
+    }
 }
 
 h1, h2, h3, h4, h5, p {
@@ -40,6 +46,22 @@ h5 {
 p {
     font-size: $p-size;
     line-height: 22px;
+}
+li{
+    font-size: $p-size;
+    line-height: 22px;
+    list-style-type: decimal;
+}
+ol{
+    padding: 0 0 10px 30px;
+    margin: 0;
+}
+figcaption {
+    font-size: $p-size;
+    line-height: 5px;
+    color: $cobalt-gray;
+    font-weight: $light;
+    font-style: italic;
 }
 
 

@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 
-h1, h2, h3, h4, h5, p, a, button, input, textarea {
+h1, h2, h3, h4, h5, p, a, button, input, textarea, li, figcaption {
   font-family: "Comfortaa", sans-serif;
   padding-bottom: 3px;
   color: #222831;
@@ -62,7 +62,13 @@ h1, h2, h3, h4, h5, p, a, button, input, textarea {
 a, button {
   font-weight: 700;
   font-size: 14px;
-  text-decoration: none;
+  text-decoration: underline;
+  color: #2fc4ab;
+  transition: all 0.2s ease-in-out;
+}
+a:hover, button:hover {
+  color: #b345db;
+  transition: all 0.2s ease-in-out;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -101,6 +107,25 @@ p {
   line-height: 22px;
 }
 
+li {
+  font-size: 12px;
+  line-height: 22px;
+  list-style-type: decimal;
+}
+
+ol {
+  padding: 0 0 10px 30px;
+  margin: 0;
+}
+
+figcaption {
+  font-size: 12px;
+  line-height: 5px;
+  color: #A3B4B4;
+  font-weight: 300;
+  font-style: italic;
+}
+
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill::first-line {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
   font-family: "Comfortaa", sans-serif;
@@ -134,6 +159,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   }
 }
 .modal__close {
+  text-decoration: none;
   cursor: pointer;
   position: absolute;
   top: 0px;
@@ -152,6 +178,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .modal__close:hover {
   background-color: #d10101;
   transition: all 0.2s ease-in-out;
+  color: #FFFFFF;
 }
 @media only screen and (min-width: 768px) {
   .modal__close {
@@ -182,7 +209,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 6.5px;
 }
 
 /* Track */
@@ -764,6 +791,7 @@ hr {
 .bg {
   background-color: #D5E0E0;
   transform: skewY(2deg);
+  transform-style: preserve-3d;
 }
 .bg .content {
   transform: skewY(-2deg);
@@ -883,12 +911,36 @@ hr {
   height: 100%;
   padding: 30px;
 }
+.modal .modal__contenido .sub {
+  text-align: center;
+}
+.modal .modal__contenido .sub-bold {
+  font-weight: 700;
+}
+.modal .modal__contenido .img-modal {
+  margin-bottom: 50px;
+}
 .modal .modal__contenido h2 {
   text-align: center;
 }
-.modal .modal__contenido h2, .modal .modal__contenido h4, .modal .modal__contenido p, .modal .modal__contenido img {
+.modal .modal__contenido h2, .modal .modal__contenido h4, .modal .modal__contenido img {
   width: 100%;
-  margin-bottom: 15px;
+  margin: 15px 0;
+}
+.modal .modal__contenido p {
+  margin-top: 10px;
+}
+.modal .modal__contenido a {
+  font-size: 12px;
+  line-height: 22px;
+  color: #2fc4ab;
+  font-weight: 400;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+.modal .modal__contenido figcaption {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .proyectos {
@@ -903,6 +955,11 @@ hr {
 .proyectos__ux {
   background-color: #2fc4ab;
   transition: all 0.5s ease-in-out;
+  background-image: url(../images/device.svg);
+  background-repeat: no-repeat;
+  background-position-y: -30px;
+  background-position-x: center;
+  background-size: 340px;
 }
 .proyectos__ux .title {
   padding-top: 100px;
@@ -918,9 +975,9 @@ hr {
   transition: all 0.5s ease-in-out;
   background-image: url(../images/plint.svg);
   background-repeat: no-repeat;
-  background-position-y: -100px;
+  background-position-y: -60px;
   background-position-x: center;
-  background-size: 60vh;
+  background-size: 380px;
 }
 .proyectos__di .title {
   padding-top: 100px;
@@ -931,10 +988,15 @@ hr {
   filter: brightness(110%);
   transition: all 0.3s ease-in-out;
 }
-@media only screen and (min-width: 992px) {
-  .proyectos .proyectos__di, .proyectos .proyectos__ux {
-    background-size: 80vh;
-    background-position-y: -190px;
+@media only screen and (min-width: 576px) {
+  .proyectos .proyectos__di {
+    background-size: 550px;
+    background-position-y: -110px;
+    background-position-x: center;
+  }
+  .proyectos .proyectos__ux {
+    background-size: 500px;
+    background-position-y: -150px;
     background-position-x: center;
   }
 }
@@ -995,8 +1057,14 @@ hr {
   width: 300px;
   height: 400px;
   text-align: right;
-  padding: 60px 30px 0 90px;
+  padding: 60px 15px 0 90px;
   margin-top: -15px;
+  -webkit-transform: translateZ(0);
+}
+@media only screen and (min-width: 992px) {
+  .proyectos .proyectos__proyecto .proyectos__descripcion {
+    padding: 60px 30px 0 90px;
+  }
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion h3, .proyectos .proyectos__proyecto .proyectos__descripcion h5 {
   color: #FFFFFF;
@@ -1016,22 +1084,22 @@ hr {
   padding: 5px 7px;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion a:hover {
-  margin-right: 5px;
+  margin-right: 3px;
   color: violet;
   transition: all 0.2s ease-in-out;
   border: 2px solid #b345db;
 }
 .proyectos__proyecto--bg1 {
-  background-image: url(../images/gasconnect_thumb.png);
+  background-image: url(../images/gasconnect_thumb.jpg);
 }
 .proyectos__proyecto--bg2 {
-  background-image: url(../images/radio_activa.png);
+  background-image: url(../images/radioactiva_thumb.png);
 }
 .proyectos__proyecto--bg3 {
-  background-image: url(../images/gasconnect_thumb.png);
+  background-image: url(../images/gasconnect_thumb.jpg);
 }
 .proyectos__proyecto--bg4 {
-  background-image: url(../images/radio_activa.png);
+  background-image: url(../images/radioactiva_thumb.png);
 }
 
 .contactame p {
@@ -1077,6 +1145,9 @@ hr {
   background-color: #FFFFFF;
   padding: 20px 0 0 0;
   z-index: 1;
+}
+.footer a {
+  font-size: 12px;
 }
 .footer .footer__title {
   padding: 20px 0 20px 0;

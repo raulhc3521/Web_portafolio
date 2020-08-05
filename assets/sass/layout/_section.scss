@@ -16,6 +16,7 @@ hr {
 .bg {
     background-color: $gray;
     transform: skewY(2deg);
+    transform-style: preserve-3d;
     .content {
         transform: skewY(-2deg);
     }
@@ -147,13 +148,38 @@ hr {
         height: 100%;
         padding: 30px;
 
+        .sub {
+            text-align: center;
+        }
+        .sub-bold {
+            font-weight: $bold;
+        }
+        .img-modal {
+            margin-bottom: 50px;
+        }
+
         h2 {
             text-align: center;
         }
 
-        h2, h4, p, img {
+        h2, h4, img {
             width: 100%;
-            margin-bottom: 15px;
+            margin: 15px 0;
+        }
+        p {
+            margin-top: 10px;
+        }   
+        a {
+            font-size: $p-size;
+            line-height: 22px;
+            color: $turquoise;
+            font-weight: $regular;
+            text-decoration: underline;
+            transition: all .2s ease-in-out;
+        }   
+        figcaption {
+            text-align: center;
+            margin-bottom: 20px;
         }
     }
 
@@ -174,6 +200,11 @@ hr {
     &__ux {
         background-color: $turquoise;
         transition: all .5s ease-in-out;
+        background-image: url(../images/device.svg);
+        background-repeat: no-repeat;
+        background-position-y: -30px;
+        background-position-x: center;
+        background-size: 340px;
 
         .title {
             padding-top: 100px;
@@ -192,9 +223,9 @@ hr {
         transition: all .5s ease-in-out;
         background-image: url(../images/plint.svg);
         background-repeat: no-repeat;
-        background-position-y: -100px;
+        background-position-y: -60px;
         background-position-x: center;
-        background-size: 60vh;
+        background-size: 380px;
 
         .title {
             padding-top: 100px;
@@ -208,10 +239,15 @@ hr {
         }
     } 
     
-    @media only screen and (min-width: 992px) {
-        .proyectos__di, .proyectos__ux {
-            background-size: 80vh;
-            background-position-y: -190px;
+    @media only screen and (min-width: 576px) {
+        .proyectos__di {
+            background-size: 550px;
+            background-position-y: -110px;
+            background-position-x: center;
+        }
+        .proyectos__ux {
+            background-size: 500px;
+            background-position-y: -150px;
             background-position-x: center;
         }
     }
@@ -281,13 +317,18 @@ hr {
         }
 
         .proyectos__descripcion {
+            @media only screen and (min-width: 992px) {
+                padding: 60px 30px 0 90px;
+            }
             background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
             float: right;
             width: 300px;
             height: 400px;
             text-align: right;
-            padding: 60px 30px 0 90px;
+            padding: 60px 15px 0 90px;
             margin-top: -15px;
+            -webkit-transform: translateZ(0);
+            //-webkit-backface-visibility: hidden;
 
             h3, h5 {
                 color: $white;
@@ -309,7 +350,7 @@ hr {
                 padding: 5px 7px;
 
                 &:hover{
-                    margin-right: 5px;
+                    margin-right: 3px;
                     color: violet;
                     transition: all .2s ease-in-out;
                     border: 2px solid $violet;
@@ -320,16 +361,16 @@ hr {
     }
 
     &__proyecto--bg1 {
-        background-image: url(../images/gasconnect_thumb.png);
+        background-image: url(../images/gasconnect_thumb.jpg);
     }
     &__proyecto--bg2 {
-        background-image: url(../images/radio_activa.png);
+        background-image: url(../images/radioactiva_thumb.png);
     }
     &__proyecto--bg3 {
-        background-image: url(../images/gasconnect_thumb.png);
+        background-image: url(../images/gasconnect_thumb.jpg);
     }
     &__proyecto--bg4 {
-        background-image: url(../images/radio_activa.png);
+        background-image: url(../images/radioactiva_thumb.png);
     }
 
   

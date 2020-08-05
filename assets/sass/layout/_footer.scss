@@ -6,6 +6,9 @@
     background-color: $white;
     padding: 20px 0 0 0;
     z-index: 1;
+    a {
+        font-size: $p-size;
+    }
     .footer__title {
         padding: 20px 0 20px 0;
     }

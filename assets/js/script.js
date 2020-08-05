@@ -102,7 +102,7 @@ function close_modal() {
         modalo2.style.margin = "10px 10px 10px 10px";
         modalo3.style.margin = "10px 10px 10px 10px";
         modalo4.style.margin = "10px 10px 10px 10px";
-        body.style.margin = "0 0px 0 0"; 
+        body.style.margin = "0 0 0 0"; 
     }
     modal1.style.opacity = 1;
     modal2.style.opacity = 1;
