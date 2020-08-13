@@ -37,7 +37,14 @@ function imgModal(element) {
     setTimeout(() => {
         boxModal.style.cssText = "opacity: 1; visibility: visible;";
     }, 20);
+}
+function close_img_modal() {
+    var boxModal = document.getElementById("box-modal");
 
+    boxModal.style.opacity = 1;
+    setTimeout(() => {
+        boxModal.style.cssText = "opacity: 0; visibility: hidden;";
+    }, 20);
 }
 
 //Funciones Modales
