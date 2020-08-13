@@ -112,6 +112,10 @@
     backdrop-filter: blur(2px);
     z-index: 22;
     transition: all .3s ease-in-out ;
+    .modal__close{
+        z-index: 23;
+    }
+
     #box-modal-content {
         margin: auto;
         display: block;

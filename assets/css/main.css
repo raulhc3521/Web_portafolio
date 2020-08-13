@@ -1080,6 +1080,9 @@ hr {
   z-index: 22;
   transition: all 0.3s ease-in-out;
 }
+#box-modal .modal__close {
+  z-index: 23;
+}
 #box-modal #box-modal-content {
   margin: auto;
   display: block;
