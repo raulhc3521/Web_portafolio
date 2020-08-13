@@ -1,4 +1,13 @@
 // keyframes
+@keyframes despliegue {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 600px;
+    }
+}
+
 @keyframes arrow {
     0% {
         top: 0;

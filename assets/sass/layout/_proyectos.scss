@@ -106,13 +106,15 @@
     }
 
     #desplegable1:checked ~ .proyectos__desplegable1 {
+        //transition: height .8s ease-in-out;  
+        animation: despliegue .8s ease-in-out;
         height: 600px;
-        transition: height .8s ease-in-out;        
     }
 
     #desplegable2:checked ~ .proyectos__desplegable2 {
+        //transition: height .8s ease-in-out;
+        animation: despliegue .8s ease-in-out;
         height: 600px;
-        transition: height .8s ease-in-out;
     }
     
     
@@ -183,7 +185,7 @@
         background-image: url(../images/gasconnect_thumb.jpg);
     }
     &__proyecto--bg2 {
-        background-image: url(../images/radioactiva_thumb.png);
+        background-image: url(../images/radioactiva_thumb.jpg);
     }
     &__proyecto--bg3 {
         background-image: url(../images/gasconnect_thumb.jpg);

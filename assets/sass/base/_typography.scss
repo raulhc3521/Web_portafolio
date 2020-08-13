@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5, p, a, button, input, textarea, li, figcaption {
     color: $dark;
 }
 
+h1, h2, h3, h4, h5 {
+    margin-bottom: 3px;
+}
+
 a, button {
     font-weight: $bold;
     font-size: $a-size;
@@ -44,7 +48,7 @@ h5 {
 }
 p {
     font-size: $p-size;
-    line-height: 18px;
+    line-height: 20px;
     padding: 3px 0;
 }
 li{
@@ -53,15 +57,19 @@ li{
     list-style-type: disc
 }
 ol{
-    padding: 0 0 10px 30px;
+    padding: 0 0 20px 30px;
     margin: 0;
 }
 figcaption {
     font-size: $p-size;
-    line-height: 15px;
+    line-height: 18px;
     color: $cobalt-gray;
     font-weight: $light;
     font-style: italic;
+    padding-bottom: 20px;
+}
+br{
+      line-height: 20px;  
 }
 
 .bold {
@@ -71,8 +79,11 @@ figcaption {
 .text-center {
     text-align: center;
 }
-.last-line {
-    padding-bottom: 30px;
+.text-turq {
+    color: $turquoise;
+}
+.text-viol {
+    color: $violet;
 }
 
 

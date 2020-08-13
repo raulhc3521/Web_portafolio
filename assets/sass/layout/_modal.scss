@@ -5,9 +5,6 @@
 }
 
 .modal {
-    br{
-
-    }
     position: fixed;
     display: flex;
     top: 0;
@@ -30,7 +27,7 @@
         margin: 10px;
         max-width: 600px;
         height: 85vh;
-        padding-bottom: 30px;
+        padding-bottom: 60px;
         display: inline-block;
         @media only screen and (min-width: 992px) {
             max-width: 800px;
@@ -50,8 +47,32 @@
         .img-modal {
             margin-bottom: 50px;
         }
-        .prototipe {
-            padding: 0 auto;
+        .prototype-mobile, .prototype-desktop {
+            display: none;
+        }
+        .modal-description {
+            padding: 10px 0 40px;
+        }
+
+        .modal-section {
+            padding: 35px 0;
+            h3 {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            img {
+                margin-top: 10px;
+                border: 1px solid $light-gray;
+            }
+            .container-fluid {
+                margin: 40px 0;
+                padding: 0;
+
+                .row{
+                    grid-row-gap: 30px;
+                }
+            }
+            
         }
 
         h2 {

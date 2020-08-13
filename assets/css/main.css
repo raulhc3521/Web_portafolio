@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, p, a, button, input, textarea, li, figcaption {
   color: #222831;
 }
 
+h1, h2, h3, h4, h5 {
+  margin-bottom: 3px;
+}
+
 a, button {
   font-weight: 700;
   font-size: 14px;
@@ -103,7 +107,7 @@ h5 {
 
 p {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 20px;
   padding: 3px 0;
 }
 
@@ -114,16 +118,21 @@ li {
 }
 
 ol {
-  padding: 0 0 10px 30px;
+  padding: 0 0 20px 30px;
   margin: 0;
 }
 
 figcaption {
   font-size: 12px;
-  line-height: 15px;
+  line-height: 18px;
   color: #A3B4B4;
   font-weight: 300;
   font-style: italic;
+  padding-bottom: 20px;
+}
+
+br {
+  line-height: 20px;
 }
 
 .bold {
@@ -135,8 +144,12 @@ figcaption {
   text-align: center;
 }
 
-.last-line {
-  padding-bottom: 30px;
+.text-turq {
+  color: #2fc4ab;
+}
+
+.text-viol {
+  color: #b345db;
 }
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill::first-line {
@@ -144,6 +157,14 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   font-family: "Comfortaa", sans-serif;
 }
 
+@keyframes despliegue {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 600px;
+  }
+}
 @keyframes arrow {
   0% {
     top: 0;
@@ -595,6 +616,60 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   transition: all 0.2s ease-in-out;
 }
 
+.modal .card1 {
+  border: 2px dashed #D5E0E0;
+  border-radius: 50px;
+  width: 220px;
+  height: 50px;
+  padding: 20px 10px 10px 10px;
+}
+.modal .card1-img1, .modal .card1-img2, .modal .card1-img3, .modal .card1-img4, .modal .card1-img5, .modal .card1-img6, .modal .card1-img7 {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  margin: 0 30px !important;
+  border: none !important;
+}
+.modal .card1-img1 {
+  background-image: url(../images/modal_gasconnect/tetris.svg);
+}
+.modal .card1-img2 {
+  background-image: url(../images/modal_gasconnect/duda.svg);
+}
+.modal .card1-img3 {
+  background-image: url(../images/modal_gasconnect/error.svg);
+}
+.modal .card1-img4 {
+  background-image: url(../images/modal_gasconnect/registro.svg);
+}
+.modal .card1-img5 {
+  background-image: url(../images/modal_gasconnect/seguimiento.svg);
+}
+.modal .card1-img6 {
+  background-image: url(../images/modal_gasconnect/descuento.svg);
+}
+.modal .card1-img7 {
+  background-image: url(../images/modal_gasconnect/seguridad.svg);
+}
+.modal .card1 .card1-text {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+}
+.modal .card1 .card1-text p {
+  font-weight: 700;
+  color: #393E46;
+  line-height: 18px;
+  margin: 0 !important;
+}
+.modal .container {
+  margin-bottom: 40px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 6.5px;
@@ -778,6 +853,7 @@ header .descripcion__avatar .box_avatar {
 }
 header .scroll {
   -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
   background-color: #b345db;
   position: fixed;
   bottom: -75px;
@@ -828,10 +904,6 @@ header .scroll .up {
   bottom: -80px !important;
   transition: all 0.2s ease-in-out;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-h1, h2, h3, h4, h5 {
-  margin-bottom: 3px;
 }
 
 .educacion__title, .experiencia__title, .proyectos__title, .conocimientos__title, .contactame__title, .footer__title {
@@ -927,7 +999,7 @@ hr {
   margin: 10px;
   max-width: 600px;
   height: 85vh;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   display: inline-block;
 }
 @media only screen and (min-width: 992px) {
@@ -949,8 +1021,29 @@ hr {
 .modal .modal__contenido .img-modal {
   margin-bottom: 50px;
 }
-.modal .modal__contenido .prototipe {
-  padding: 0 auto;
+.modal .modal__contenido .prototype-mobile, .modal .modal__contenido .prototype-desktop {
+  display: none;
+}
+.modal .modal__contenido .modal-description {
+  padding: 10px 0 40px;
+}
+.modal .modal__contenido .modal-section {
+  padding: 35px 0;
+}
+.modal .modal__contenido .modal-section h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.modal .modal__contenido .modal-section img {
+  margin-top: 10px;
+  border: 1px solid #EEEEEE;
+}
+.modal .modal__contenido .modal-section .container-fluid {
+  margin: 40px 0;
+  padding: 0;
+}
+.modal .modal__contenido .modal-section .container-fluid .row {
+  grid-row-gap: 30px;
 }
 .modal .modal__contenido h2 {
   text-align: center;
@@ -1067,12 +1160,12 @@ hr {
   transition: height 0.8s ease-in-out;
 }
 .proyectos #desplegable1:checked ~ .proyectos__desplegable1 {
+  animation: despliegue 0.8s ease-in-out;
   height: 600px;
-  transition: height 0.8s ease-in-out;
 }
 .proyectos #desplegable2:checked ~ .proyectos__desplegable2 {
+  animation: despliegue 0.8s ease-in-out;
   height: 600px;
-  transition: height 0.8s ease-in-out;
 }
 .proyectos .proyectos__proyecto {
   float: right;
@@ -1132,7 +1225,7 @@ hr {
   background-image: url(../images/gasconnect_thumb.jpg);
 }
 .proyectos__proyecto--bg2 {
-  background-image: url(../images/radioactiva_thumb.png);
+  background-image: url(../images/radioactiva_thumb.jpg);
 }
 .proyectos__proyecto--bg3 {
   background-image: url(../images/gasconnect_thumb.jpg);
