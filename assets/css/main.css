@@ -825,11 +825,11 @@ header .descripcion__avatar {
   max-width: 350px;
   max-height: 350px;
   background-color: #2fc4ab;
-  background-image: url(../images/foto_perfil.jpg);
+  background-image: url(../images/foto_perfil.png);
   opacity: 1;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 250%;
+  background-size: 100%;
   z-index: 2;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
