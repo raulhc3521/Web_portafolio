@@ -27,6 +27,19 @@ function uncheck() {
     document.getElementById("nav__desplegable").checked = false;
 }
 
+//Función modal imagenes
+function imgModal(element) {
+    var boxModal = document.getElementById("box-modal");
+
+    document.getElementById("img-modal").src = element.src;
+
+    boxModal.style.cssText = "opacity: 0; visibility: visible;";
+    setTimeout(() => {
+        boxModal.style.cssText = "opacity: 1; visibility: visible;";
+    }, 20);
+
+}
+
 //Funciones Modales
 function open_modal1() {
     var modal1 = document.querySelector('.modal-1');
@@ -124,6 +137,7 @@ function close_modal() {
     var modalo2 = document.querySelector('.modal--overflow2');
     var modalo3 = document.querySelector('.modal--overflow3');
     var modalo4 = document.querySelector('.modal--overflow4');
+    var boxModal = document.getElementById("box-modal");
 
     body.style.overflow = "auto"; 
     if (screen.width > 1200) {
@@ -137,7 +151,9 @@ function close_modal() {
     modal2.style.opacity = 1;
     modal3.style.opacity = 1;
     modal4.style.opacity = 1;
+    boxModal.style.opacity = 1;
     setTimeout(() => {
+        boxModal.style.cssText = "opacity: 0; visibility: hidden;";
         modal1.style.cssText = "opacity: 0; visibility: hidden;";
         modal2.style.cssText = "opacity: 0; visibility: hidden;";
         modal3.style.cssText = "opacity: 0; visibility: hidden;";

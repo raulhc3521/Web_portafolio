@@ -99,3 +99,29 @@
         }
     }   
 }
+
+#box-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(2px);
+    z-index: 22;
+    transition: all .3s ease-in-out ;
+    #box-modal-content {
+        margin: auto;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img {
+            width: 100%;
+        }
+    }
+}
