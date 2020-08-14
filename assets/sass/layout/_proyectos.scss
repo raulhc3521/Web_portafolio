@@ -17,13 +17,13 @@
     }
 
     &__ux {
-        background-color: $turquoise;
+        background-color: rgb(108, 185, 178);
         transition: all .5s ease-in-out;
         background-image: url(../images/device.svg);
         background-repeat: no-repeat;
         background-position-y: -30px;
         background-position-x: center;
-        background-size: 340px;
+        background-size: 340px;        
 
         .title {
             padding-top: 100px;
@@ -32,13 +32,13 @@
         }
 
         &:hover {
-            filter: brightness(105%);
-            transition: all .3s ease-in-out;
+            background-color: $turquoise;
+            transition: all .2s ease-in-out;
         }
     }
 
     &__di {
-        background-color: $violet;
+        background-color: rgb(167, 121, 167);
         transition: all .5s ease-in-out;
         background-image: url(../images/plint.svg);
         background-repeat: no-repeat;
@@ -53,8 +53,8 @@
         }
 
         &:hover {
-            filter: brightness(110%);
-            transition: all .3s ease-in-out;
+            background-color: $violet;
+            transition: all .2s ease-in-out;
         }
     } 
     
@@ -105,14 +105,12 @@
         
     }
 
-    #desplegable1:checked ~ .proyectos__desplegable1 {
-        //transition: height .8s ease-in-out;  
+    #desplegable1:checked ~ .proyectos__desplegable1 {  
         animation: despliegue .8s ease-in-out;
         height: 600px;
     }
 
     #desplegable2:checked ~ .proyectos__desplegable2 {
-        //transition: height .8s ease-in-out;
         animation: despliegue .8s ease-in-out;
         height: 600px;
     }
@@ -148,8 +146,6 @@
             text-align: right;
             padding: 60px 15px 0 90px;
             margin-top: -15px;
-            -webkit-transform: translateZ(0);
-            //-webkit-backface-visibility: hidden;
 
             h3, h5 {
                 color: $white;
@@ -193,6 +189,4 @@
     &__proyecto--bg4 {
         background-image: url(../images/radioactiva_thumb.png);
     }
-
-  
 }

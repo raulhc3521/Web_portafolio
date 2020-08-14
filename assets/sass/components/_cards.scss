@@ -17,27 +17,6 @@
             margin: 0 30px !important;
             border: none !important;
         }
-        &-img1 {
-            background-image: url(../images/modal_gasconnect/tetris.svg);
-        }
-        &-img2 {
-            background-image: url(../images/modal_gasconnect/duda.svg);
-        }
-        &-img3 {
-            background-image: url(../images/modal_gasconnect/error.svg);
-        }
-        &-img4 {
-            background-image: url(../images/modal_gasconnect/registro.svg);
-        }
-        &-img5 {
-            background-image: url(../images/modal_gasconnect/seguimiento.svg);
-        }
-        &-img6 {
-            background-image: url(../images/modal_gasconnect/descuento.svg);
-        }
-        &-img7 {
-            background-image: url(../images/modal_gasconnect/seguridad.svg);
-        }
 
         .card1-text {
             display: inline-block;
@@ -48,11 +27,49 @@
                 color: $cobalt-dark;
                 line-height: 18px;
                 margin: 0 !important;
-            }
-            
+            }  
         }
     }
     .container {
         margin-bottom: 40px;
+    }
+}
+
+.modal-1 .card1 {
+    &-img1 {
+        background-image: url(../images/modal_gasconnect/tetris.svg);
+    }
+    &-img2 {
+        background-image: url(../images/modal_gasconnect/duda.svg);
+    }
+    &-img3 {
+        background-image: url(../images/modal_gasconnect/error.svg);
+    }
+    &-img4 {
+        background-image: url(../images/modal_gasconnect/registro.svg);
+    }
+    &-img5 {
+        background-image: url(../images/modal_gasconnect/seguimiento.svg);
+    }
+    &-img6 {
+        background-image: url(../images/modal_gasconnect/descuento.svg);
+    }
+    &-img7 {
+        background-image: url(../images/modal_gasconnect/seguridad.svg);
+    }
+}
+
+.modal-2 .card1 {
+    &-img1 {
+        background-image: url(../images/modal_radioactiva/lupa.svg);
+    }
+    &-img2 {
+        background-image: url(../images/modal_radioactiva/caos.svg);
+    }
+    &-img3 {
+        background-image: url(../images/modal_radioactiva/inconsistencia.svg);
+    }
+    &-img4 {
+        background-image: url(../images/modal_radioactiva/tetris.svg);
     }
 }

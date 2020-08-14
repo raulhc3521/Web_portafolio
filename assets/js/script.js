@@ -1,7 +1,7 @@
 //Función de rotación
 var avatar = document.querySelector('.descripcion__avatar');
-    var scrollup = document.querySelector('.scroll');
-    var navbar = document.querySelector('.navbar');
+var scrollup = document.querySelector('.scroll');
+var navbar = document.querySelector('.navbar');
 
 function rotate() {
 
@@ -23,10 +23,12 @@ function rotate() {
 }
 window.addEventListener("scroll", rotate);
 
+
 //Función uncheck
 function uncheck() {
     document.getElementById("nav__desplegable").checked = false;
 }
+
 
 //Función modal imagenes
 var modal1 = document.querySelector('.modal-1');
@@ -82,66 +84,57 @@ function close_img_modal() {
 
 //Funciones Modales
 function open_modal1() {
-    modal1.style.cssText = "opacity: 0; visibility: visible;";
     body.style.overflow = "hidden";
-    proto();
+    modal1.style.cssText = "opacity: 0; visibility: visible;";
     setTimeout(() => {
         modal1.style.opacity = 1;
     }, 20);
-    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        pro_mob.style.display = "block";
+
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        modalo1.style.margin = "10px 10px 10px 4px";
+        body.style.margin = "0 6px 0 0"; 
     }
-    else {
-        modal.style.margin = "10px 10px 10px 4px";
-        body.style.margin = "0 6px 0 0";
-        pro_des.style.display = "block";
-    }
-    
-    
-    
+    proto();    
 }
+
 function open_modal2() {
+    body.style.overflow = "hidden";
     modal2.style.cssText = "opacity: 0; visibility: visible;";
     setTimeout(() => {
         modal2.style.opacity = 1;
     }, 20);
-    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        pro_mob.style.display = "block";
+
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        modalo2.style.margin = "10px 10px 10px 4px";
+        body.style.margin = "0 6px 0 0"; 
     }
-    else {
-        modal.style.margin = "10px 10px 10px 4px";
-        body.style.margin = "0 6px 0 0";
-    }
-    body.style.overflow = "hidden";
+    proto();  
 }
 function open_modal3() {
+    body.style.overflow = "hidden";
     modal3.style.cssText = "opacity: 0; visibility: visible;";
     setTimeout(() => {
         modal3.style.opacity = 1;
     }, 20);
-    
-    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        pro_mob.style.display = "block";
+
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        modalo3.style.margin = "10px 10px 10px 4px";
+        body.style.margin = "0 6px 0 0"; 
     }
-    else {
-        modal.style.margin = "10px 10px 10px 4px";
-        body.style.margin = "0 6px 0 0";
-    }
-    body.style.overflow = "hidden";
+    proto();  
 }
 function open_modal4() {
+    body.style.overflow = "hidden";
     modal4.style.cssText = "opacity: 0; visibility: visible;";
     setTimeout(() => {
         modal4.style.opacity = 1;
     }, 20);
-    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        pro_mob.style.display = "block";
+
+    if (! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        modalo4.style.margin = "10px 10px 10px 4px";
+        body.style.margin = "0 6px 0 0"; 
     }
-    else {
-        modal.style.margin = "10px 10px 10px 4px";
-        body.style.margin = "0 6px 0 0";
-    }
-    body.style.overflow = "hidden";
+    proto();  
 }
 
 function close_modal() {
@@ -157,9 +150,7 @@ function close_modal() {
     modal2.style.opacity = 1;
     modal3.style.opacity = 1;
     modal4.style.opacity = 1;
-    boxModal.style.opacity = 1;
     setTimeout(() => {
-        boxModal.style.cssText = "opacity: 0; visibility: hidden;";
         modal1.style.cssText = "opacity: 0; visibility: hidden;";
         modal2.style.cssText = "opacity: 0; visibility: hidden;";
         modal3.style.cssText = "opacity: 0; visibility: hidden;";

@@ -113,9 +113,11 @@
     backdrop-filter: blur(2px);
     z-index: 22;
     transition: all .3s ease-in-out ;
+    
     .modal__close{
         z-index: 23;
         position: absolute;
+        margin: 0;
     }
 
     #box-modal-content {
@@ -124,8 +126,7 @@
         width: 100%;
 
         @media only screen and (min-width: 768px) {
-            max-width: 70%;
-            
+            max-width: 70%;  
         }
 
         img {

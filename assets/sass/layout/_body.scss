@@ -13,7 +13,6 @@ hr {
 .bg {
     background-color: $gray;
     transform: skewY(2deg);
-    transform-style: preserve-3d;
     .content {
         transform: skewY(-2deg);
     }

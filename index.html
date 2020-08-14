@@ -11,12 +11,8 @@
     <!-- estilo CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 
-    
-
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/be26ab9caa.js"></script>
-
-        
+    <script src="https://kit.fontawesome.com/be26ab9caa.js"></script> 
 
 </head>
 <body>
@@ -27,9 +23,9 @@
                 <div class="col-2">
                     <a href="#descripcion" class="navbar__text-title--active">Raúl Higueras</a>
                 </div>
+                <a href="#proyectos" class="navbar__text--inactive col-2">Proyectos</a>
                 <a href="#educacion" class="navbar__text--inactive col-2">Educación</a>
                 <a href="#experiencia" class="navbar__text--inactive col-2">Experiencia</a>
-                <a href="#proyectos" class="navbar__text--inactive col-2">Proyectos</a>
                 <a href="#conocimientos" class="navbar__text--inactive col-2">Conocimientos</a>
                 <a href="#contacto" class="navbar__text--inactive col-2">Contacto</a>
             </div>
@@ -43,9 +39,9 @@
             
             <label for="nav__desplegable" class="row desplegable_nav">
                 <a href="#descripcion" onclick="uncheck()" class="navbar__text--inactive col-12">Descripción</a>
+                <a href="#proyectos" onclick="uncheck()" class="navbar__text--inactive col-12">Proyectos</a>
                 <a href="#educacion" onclick="uncheck()" class="navbar__text--inactive col-12">Educación</a>
                 <a href="#experiencia" onclick="uncheck()" class="navbar__text--inactive col-12">Experiencia</a>
-                <a href="#proyectos" onclick="uncheck()" class="navbar__text--inactive col-12">Proyectos</a>
                 <a href="#conocimientos" onclick="uncheck()" class="navbar__text--inactive col-12">Conocimientos</a>
                 <a href="#contacto" onclick="uncheck()" class="navbar__text--inactive col-12">Contacto</a>
             </label>
@@ -75,16 +71,16 @@
         </a>       
     </header>
 
-    <section id="proyectos" class="proyectos bg2">
+    <section id="proyectos" class="proyectos">
         <div class="content">
             <h2 class="proyectos__title">Proyectos</h2>
         </div>
 
-        <div class="proyectos__ux">
+        <div class="proyectos__ux content">
                <div class="">
                 <label for="desplegable1">
-                    <h2 class="content title select-none">Diseño UX/UI</h2>
-                    <div class="arrow__container"">
+                    <h2 class="title select-none">Diseño UX/UI</h2>
+                    <div class="arrow__container">
                         <div class="arrow1"></div>
                     </div>
                 </label>
@@ -94,21 +90,21 @@
                     <div class="proyectos__desplegable1">
 
                         <div class="proyectos__proyecto proyectos__proyecto--bg1">
-                            <div class="proyectos__descripcion content">
+                            <div class="proyectos__descripcion select-none">
                                 <h3>Gasconnect</h3>
                                 <h5>2020 - Desafío Latam</h5>
                                 <p>Ejercicio final de la carrera de Diseño UX/UI de Desafío Latam, donde se abordaron diversas plataformas con el objetivo de hacer un estudio de usabilidad para posteriormente Diseñar mejoras a esta plataforma.</p>
-                                <a class="select-none" onclick="open_modal1()">Ver Más</a>
+                                <a onclick="open_modal1()">Ver Más</a>
                                 
                             </div>
                         </div>
 
                         <div class="proyectos__proyecto proyectos__proyecto--bg2">
-                            <div class="proyectos__descripcion content">
+                            <div class="proyectos__descripcion select-none">
                                 <h3>Radio Activa</h3>
                                 <h5>2020 - Desafío Latam</h5>
                                 <p>Ejercicio realizado en la carrera de Diseño UX/UI de Desafío Latam, donde se realizaron rediseños a sitios web de radio emisoras nacionales.</p>
-                                <a class="select-none" onclick="open_modal2()">Ver Más</a>
+                                <a onclick="open_modal2()">Ver Más</a>
                             </div>
                         </div>
 
@@ -116,7 +112,7 @@
                </div> 
         </div>
 
-        <div class="proyectos__di">
+        <div class="proyectos__di content">
             <div class="">
                 <label for="desplegable2">
                     <h2 class="content title select-none">Diseño Industrial</h2>
@@ -128,20 +124,20 @@
                  <div class="proyectos__desplegable2">
 
                      <div class="proyectos__proyecto proyectos__proyecto--bg3">
-                         <div class="proyectos__descripcion content">
+                         <div class="proyectos__descripcion select-none">
                              <h3>Adario</h3>
                              <h5>Proyecto Corfo - StartUp Chile</h5>
                              <p>Es un tablero inteligente que ayuda a los adultos mayores a programar sus actividades diarias.</p>
-                             <a class="select-none" onclick="open_modal3()">Ver Más</a>
+                             <a onclick="open_modal3()">Ver Más</a>
                          </div>
                      </div>
 
                      <div class="proyectos__proyecto proyectos__proyecto--bg4">
-                         <div class="proyectos__descripcion content">
+                         <div class="proyectos__descripcion select-none">
                              <h3>Plint</h3>
                              <h5>Utem - ProteinLab</h5>
                              <p>Es un macetero inteligente que da a tu planta la capacidad de interactuar, mediante sensores, luz y sonidos, puedes enterarte del nivel de humedad de tu planta y ésta reaccionará a tus cuidados.</p>
-                             <a class="select-none" onclick="open_modal4()">Ver Más</a>
+                             <a onclick="open_modal4()">Ver Más</a>
                          </div>
                      </div>
 
@@ -195,7 +191,7 @@
                     <div class="experiencia__img2 d-none-lg col-12 col-md-3"></div>
                     <div class="experiencia__text col-12 col-md-9">
                         <h3>Adario</h3>
-                        <h4>Diseñador Industrial y Director de Operaciones | 2017-2018</h4>
+                        <h4>Cofundador - Diseñador Industrial | 2017-2018</h4>
                         <h5>Proyecto financiado por Corfo y Start-UP Chile bajo el programa The S Factory Gen7. Encargado del Diseño Industrial, prototipado de productos mediante fabricación digital, Administración, análisis de mercado, pricing y estrategias de venta.</h5>
                     </div>
                     <div class="experiencia__img2 d-none d-block-lg col-12 col-md-3"></div>
@@ -214,8 +210,9 @@
             </div>
         </div>        
     </section>
-
-    <section id="conocimientos" class="conocimientos container">
+    
+    <div id="conocimientos"></div>
+    <section class="conocimientos container">
         <div class="row">
             <div class="col-12">
                 <h2 class="conocimientos__title">Conocimientos</h2>
@@ -453,8 +450,101 @@
     
             <div class="modal__conjunto">
                 <div class="modal--overflow modal--overflow2">
-                    <div class="modal__contenido">   
-                         
+                    <div class="modal__contenido">
+
+                        <div class="descripcion modal-description">
+                            <h2>RadioActiva</h2>
+                            <p class="sub">Proyecto realizado en la carrera de Diseño UX/UI de Desafío Latam</p>
+                            <br>
+                            <img onclick="imgModal(this)" class="img-modal" src="assets/images/modal_radioactiva/mockup_desktop_.jpg" alt="">                
+                            <h5 class="bold">Descripción del proyecto</h5>
+                            <p>El objetivo de este trabajo es evaluar mis capacidades para desenvolverme como Diseñador UI dando propuestas de rediseño para páginas web de radio emisoras nacionales, tomando en cuenta la gran cantidad de información que estas poseen.</p>
+                            <p class="bold d-inline">Duración del proyecto:</p>
+                            <p class="d-inline">3 días</p>
+                        </div>
+
+                        <div class="interpretacion modal-section">
+                            <h3><span class="text-turq">Etapa 1 </span>Interpretación</h3>
+
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>User Persona</li>
+                                <li>Value Proposition Canvas</li>
+                            </ol>
+
+                            <p>Analizando la investigación entregada por la empresa, se identificaron los siguientes problemas en su página web:</p>
+                            <div class="container-fluid">
+                                <div class="row">
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img1"></div>
+                                        <div class="card1-text">
+                                            <p>Encontrabilidad del contenido</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img2"></div>
+                                        <div class="card1-text">
+                                            <p>Saturación de contenido</p>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img3"></div>
+                                        <div class="card1-text">
+                                            <p>Inconsistencias en el Diseño</p>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="card1 col-12 col-md-6">
+                                        <div class="card1-img4"></div>
+                                        <div class="card1-text">
+                                            <p>Arquitectura de la información</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ideacion modal-section">
+                            <h3><span class="text-turq">Etapa 2 </span>Ideación</h3>
+
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>Sketching</li>
+                                <li>Wireframes</li>
+                                <li>UI Kit</li>
+                            </ol>
+
+                            <img onclick="imgModal(this)" src="assets/images/modal_gasconnect/WireframeHQ.png" alt="">
+                            <figcaption>Imagen correspondiente a los Wireframes de la app Gasconnect</figcaption>
+
+                            <iframe style="width: 100%; height: 400px; border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZq4TZqGl8bMT4mGFbDMkle%2FPrototipo-Gasconnect%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION" allowfullscreen></iframe>
+
+                        </div>
+
+                        <div class="prototipado modal-section">
+                            <h3><span class="text-turq">Etapa 3 </span>Prototipado</h3>
+                            <p class="bold">Actividades realizadas:</p>
+                            <ol>
+                                <li>Prototipo de alta fidelidad</li>
+                                <li>Testeo de usabilidad</li>
+                            </ol>
+
+                            <h5 class="bold">Prueba el Prototípo de esta app</h5>
+                            <p>Misión: Estabas cocinando en tu hogar y se te acaba el gas, por lo que deber comprar un cilindro normal de 15kl, un cilindro catalítico de 15kl, aplicar un código de descuento, pagar en efectivo y pedirlo a la dirección "San Diego 310, Santiago"</p>
+
+                            <iframe class="prototype-mobile" style="margin: 30px auto; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; width: 100%; max-width: 320px; height: 90vh; max-height: 628px;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FZq4TZqGl8bMT4mGFbDMkle%2FWireframes-HD%3Fnode-id%3D1%253A2%26viewport%3D710%252C621%252C0.2468518763780594%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>                          
+                        </div>   
+
+                        <div class="resultados modal-section">
+                            <h3>Resultados</h3>
+                            <p>Una vez generado el prototipo testeable, se obtuvo como resultado del testeo una buena aceptación de los clientes quedando como actividades futuras revisar el ícono del carro de compras para que sea más entendible, crear una descripción más correcta para el sistema de cilindros vacíos, mostrar de mejor forma los descuentos realizados al carro de compras y una crear descripción para los cilindros catalíticos.</p>
+                        </div>
+
+
                         <h2>Radio Activa</h2>
                         <h5 class="sub">Proyecto realizado en la carrera de Diseño UX/UI de Desafío Latam</h5>
                         <img class="img-modal" src="assets/images/modal_radioactiva/mockup_desktop_.jpg" alt="">

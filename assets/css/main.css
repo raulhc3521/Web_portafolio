@@ -634,27 +634,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   margin: 0 30px !important;
   border: none !important;
 }
-.modal .card1-img1 {
-  background-image: url(../images/modal_gasconnect/tetris.svg);
-}
-.modal .card1-img2 {
-  background-image: url(../images/modal_gasconnect/duda.svg);
-}
-.modal .card1-img3 {
-  background-image: url(../images/modal_gasconnect/error.svg);
-}
-.modal .card1-img4 {
-  background-image: url(../images/modal_gasconnect/registro.svg);
-}
-.modal .card1-img5 {
-  background-image: url(../images/modal_gasconnect/seguimiento.svg);
-}
-.modal .card1-img6 {
-  background-image: url(../images/modal_gasconnect/descuento.svg);
-}
-.modal .card1-img7 {
-  background-image: url(../images/modal_gasconnect/seguridad.svg);
-}
 .modal .card1 .card1-text {
   display: inline-block;
   width: 100px;
@@ -668,6 +647,41 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .modal .container {
   margin-bottom: 40px;
+}
+
+.modal-1 .card1-img1 {
+  background-image: url(../images/modal_gasconnect/tetris.svg);
+}
+.modal-1 .card1-img2 {
+  background-image: url(../images/modal_gasconnect/duda.svg);
+}
+.modal-1 .card1-img3 {
+  background-image: url(../images/modal_gasconnect/error.svg);
+}
+.modal-1 .card1-img4 {
+  background-image: url(../images/modal_gasconnect/registro.svg);
+}
+.modal-1 .card1-img5 {
+  background-image: url(../images/modal_gasconnect/seguimiento.svg);
+}
+.modal-1 .card1-img6 {
+  background-image: url(../images/modal_gasconnect/descuento.svg);
+}
+.modal-1 .card1-img7 {
+  background-image: url(../images/modal_gasconnect/seguridad.svg);
+}
+
+.modal-2 .card1-img1 {
+  background-image: url(../images/modal_radioactiva/lupa.svg);
+}
+.modal-2 .card1-img2 {
+  background-image: url(../images/modal_radioactiva/caos.svg);
+}
+.modal-2 .card1-img3 {
+  background-image: url(../images/modal_radioactiva/inconsistencia.svg);
+}
+.modal-2 .card1-img4 {
+  background-image: url(../images/modal_radioactiva/tetris.svg);
 }
 
 /* width */
@@ -921,7 +935,6 @@ hr {
 .bg {
   background-color: #D5E0E0;
   transform: skewY(2deg);
-  transform-style: preserve-3d;
 }
 .bg .content {
   transform: skewY(-2deg);
@@ -1084,6 +1097,7 @@ hr {
 #box-modal .modal__close {
   z-index: 23;
   position: absolute;
+  margin: 0;
 }
 #box-modal #box-modal-content {
   margin: auto;
@@ -1117,7 +1131,7 @@ hr {
   display: none;
 }
 .proyectos__ux {
-  background-color: #2fc4ab;
+  background-color: #6cb9b2;
   transition: all 0.5s ease-in-out;
   background-image: url(../images/device.svg);
   background-repeat: no-repeat;
@@ -1131,11 +1145,11 @@ hr {
   color: #FFFFFF;
 }
 .proyectos__ux:hover {
-  filter: brightness(105%);
-  transition: all 0.3s ease-in-out;
+  background-color: #2fc4ab;
+  transition: all 0.2s ease-in-out;
 }
 .proyectos__di {
-  background-color: #b345db;
+  background-color: #a779a7;
   transition: all 0.5s ease-in-out;
   background-image: url(../images/plint.svg);
   background-repeat: no-repeat;
@@ -1149,8 +1163,8 @@ hr {
   color: #FFFFFF;
 }
 .proyectos__di:hover {
-  filter: brightness(110%);
-  transition: all 0.3s ease-in-out;
+  background-color: #b345db;
+  transition: all 0.2s ease-in-out;
 }
 @media only screen and (min-width: 576px) {
   .proyectos .proyectos__di {
@@ -1223,7 +1237,6 @@ hr {
   text-align: right;
   padding: 60px 15px 0 90px;
   margin-top: -15px;
-  -webkit-transform: translateZ(0);
 }
 @media only screen and (min-width: 992px) {
   .proyectos .proyectos__proyecto .proyectos__descripcion {
@@ -1276,7 +1289,7 @@ hr {
   background-image: url(../images/utem.png);
 }
 .educacion .educacion__img2 {
-  background-image: url(../images/Desafio_latam.svg);
+  background-image: url(../images/desafio_latam.png);
 }
 .educacion .educacion__img, .educacion .educacion__img2 {
   background-repeat: no-repeat;
