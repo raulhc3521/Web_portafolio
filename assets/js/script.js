@@ -1,8 +1,9 @@
 //Función de rotación
-function rotate() {
-    var avatar = document.querySelector('.descripcion__avatar');
+var avatar = document.querySelector('.descripcion__avatar');
     var scrollup = document.querySelector('.scroll');
     var navbar = document.querySelector('.navbar');
+
+function rotate() {
 
     if(this.scrollY > 10){
         setTimeout(() => {
@@ -28,19 +29,51 @@ function uncheck() {
 }
 
 //Función modal imagenes
+var modal1 = document.querySelector('.modal-1');
+var modal2 = document.querySelector('.modal-2');
+var modal3 = document.querySelector('.modal-3');
+var modal4 = document.querySelector('.modal-4');
+var body = document.querySelector('body');
+var modalo1 = document.querySelector('.modal--overflow1');
+var modalo2 = document.querySelector('.modal--overflow2');
+var modalo3 = document.querySelector('.modal--overflow3');
+var modalo4 = document.querySelector('.modal--overflow4');
+var boxModal = document.getElementById("box-modal");
+var pro_des = document.querySelector('.prototype-desktop');
+var pro_mob = document.querySelector('.prototype-mobile');
+var boxModal = document.getElementById("box-modal");
+
+function proto() {
+    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        pro_mob.style.display = "block";
+    }
+    else {
+        pro_des.style.display = "block";
+    }
+}
+
 function imgModal(element) {
-    var boxModal = document.getElementById("box-modal");
-
     document.getElementById("img-modal").src = element.src;
-
     boxModal.style.cssText = "opacity: 0; visibility: visible;";
+    body.style.overflow = "hidden";
+    
     setTimeout(() => {
         boxModal.style.cssText = "opacity: 1; visibility: visible;";
     }, 20);
-}
-function close_img_modal() {
-    var boxModal = document.getElementById("box-modal");
 
+    if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        modal.style.margin = "10px";
+        body.style.margin = "0";
+        pro_mob.style.display = "block";
+    }
+    else {
+        modal.style.margin = "10px 10px 10px 4px";
+        body.style.margin = "0 6px 0 0";
+        pro_des.style.display = "block";
+    }
+}
+
+function close_img_modal() {
     boxModal.style.opacity = 1;
     setTimeout(() => {
         boxModal.style.cssText = "opacity: 0; visibility: hidden;";
@@ -49,103 +82,69 @@ function close_img_modal() {
 
 //Funciones Modales
 function open_modal1() {
-    var modal1 = document.querySelector('.modal-1');
-    var body = document.querySelector('body');
-    var modal = document.querySelector('.modal--overflow1');
-    var pro_des = document.querySelector('.prototype-desktop');
-    var pro_mob = document.querySelector('.prototype-mobile');
-
     modal1.style.cssText = "opacity: 0; visibility: visible;";
+    body.style.overflow = "hidden";
+    proto();
     setTimeout(() => {
         modal1.style.opacity = 1;
     }, 20);
-
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        body.style.overflow = "hidden";
         pro_mob.style.display = "block";
     }
     else {
         modal.style.margin = "10px 10px 10px 4px";
         body.style.margin = "0 6px 0 0";
-        body.style.overflow = "hidden";
         pro_des.style.display = "block";
     }
-    body.style.overflow = "hidden";
+    
     
     
 }
 function open_modal2() {
-    var modal2 = document.querySelector('.modal-2');
-    var body = document.querySelector('body');
-    var modal = document.querySelector('.modal--overflow2');
-
     modal2.style.cssText = "opacity: 0; visibility: visible;";
     setTimeout(() => {
         modal2.style.opacity = 1;
     }, 20);
-    
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        body.style.overflow = "hidden";
+        pro_mob.style.display = "block";
     }
     else {
         modal.style.margin = "10px 10px 10px 4px";
         body.style.margin = "0 6px 0 0";
-        body.style.overflow = "hidden";
     }
     body.style.overflow = "hidden";
 }
 function open_modal3() {
-    var modal3 = document.querySelector('.modal-3');
-    var body = document.querySelector('body');
-    var modal = document.querySelector('.modal--overflow3');
-
     modal3.style.cssText = "opacity: 0; visibility: visible;";
     setTimeout(() => {
         modal3.style.opacity = 1;
     }, 20);
     
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        body.style.overflow = "hidden";
+        pro_mob.style.display = "block";
     }
     else {
         modal.style.margin = "10px 10px 10px 4px";
         body.style.margin = "0 6px 0 0";
-        body.style.overflow = "hidden";
     }
     body.style.overflow = "hidden";
 }
 function open_modal4() {
-    var modal4 = document.querySelector('.modal-4');
-    var body = document.querySelector('body');
-    var modal = document.querySelector('.modal--overflow4');
-
     modal4.style.cssText = "opacity: 0; visibility: visible;";
     setTimeout(() => {
         modal4.style.opacity = 1;
     }, 20);
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        body.style.overflow = "hidden";
+        pro_mob.style.display = "block";
     }
     else {
         modal.style.margin = "10px 10px 10px 4px";
         body.style.margin = "0 6px 0 0";
-        body.style.overflow = "hidden";
     }
     body.style.overflow = "hidden";
 }
 
 function close_modal() {
-    var modal1 = document.querySelector('.modal-1');
-    var modal2 = document.querySelector('.modal-2');
-    var modal3 = document.querySelector('.modal-3');
-    var modal4 = document.querySelector('.modal-4');
-    var body = document.querySelector('body');
-    var modalo1 = document.querySelector('.modal--overflow1');
-    var modalo2 = document.querySelector('.modal--overflow2');
-    var modalo3 = document.querySelector('.modal--overflow3');
-    var modalo4 = document.querySelector('.modal--overflow4');
-    var boxModal = document.getElementById("box-modal");
-
     body.style.overflow = "auto"; 
     if (screen.width > 1200) {
         modalo1.style.margin = "10px 10px 10px 10px";
