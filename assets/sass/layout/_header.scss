@@ -57,6 +57,8 @@ header {
     }
 
     .scroll {
+        -webkit-user-drag: none;
+	    -webkit-app-region: no-drag;
         -webkit-tap-highlight-color: transparent;
         text-decoration: none;
         background-color: $violet;

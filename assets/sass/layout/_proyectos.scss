@@ -1,4 +1,4 @@
-.proyectos {   
+.proyectos {
     .prototipe {
         display: flex;
         width: 100%;
@@ -17,7 +17,7 @@
     }
 
     &__ux {
-        background-color: rgb(108, 185, 178);
+        background-color: $light-turquoise;
         transition: all .5s ease-in-out;
         background-image: url(../images/device.svg);
         background-repeat: no-repeat;
@@ -28,33 +28,52 @@
         .title {
             padding-top: 100px;
             text-align: center;
-            color: $white;
+            color: $dark;
+            transition: all .5s ease-in-out;
         }
 
         &:hover {
             background-color: $turquoise;
             transition: all .2s ease-in-out;
+            .title {
+                color: $white;
+                transition: all .2s ease-in-out;
+            }
+            .arrow__container .arrow1 {
+                filter: brightness(100%);
+                transition: all .2s ease-in-out;
+            }
         }
     }
 
     &__di {
-        background-color: rgb(167, 121, 167);
+        background-color: $light-violet;
         transition: all .5s ease-in-out;
         background-image: url(../images/plint.svg);
         background-repeat: no-repeat;
         background-position-y: -60px;
         background-position-x: center;
         background-size: 380px;
+        border-top: 30px solid $white;
 
         .title {
             padding-top: 100px;
             text-align: center;
-            color: $white;
+            color: $dark;
+            transition: all .5s ease-in-out;
         }
 
         &:hover {
             background-color: $violet;
             transition: all .2s ease-in-out;
+            .title {
+                color: $white;
+                transition: all .2s ease-in-out;
+            }
+            .arrow__container .arrow1 {
+                filter: brightness(100%);
+                transition: all .2s ease-in-out;
+            }
         }
     } 
     
@@ -85,6 +104,8 @@
             background-position: center;
             background-size: contain;
             margin: 0 auto;
+            filter: brightness(0);
+            transition: all .5s ease-in-out;
         }
         .arrow1 {
             position: relative;
@@ -184,7 +205,7 @@
         background-image: url(../images/radioactiva_thumb.jpg);
     }
     &__proyecto--bg3 {
-        background-image: url(../images/gasconnect_thumb.jpg);
+        background-image: url(../images/adario_thumb.jpg);
     }
     &__proyecto--bg4 {
         background-image: url(../images/radioactiva_thumb.png);

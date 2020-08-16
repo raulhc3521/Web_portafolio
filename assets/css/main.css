@@ -70,7 +70,7 @@ a, button {
   transition: all 0.2s ease-in-out;
 }
 a:hover, button:hover {
-  color: #b345db;
+  color: #ce5ef7;
   transition: all 0.2s ease-in-out;
 }
 
@@ -149,7 +149,7 @@ br {
 }
 
 .text-viol {
-  color: #b345db;
+  color: #ce5ef7;
 }
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active, input:-webkit-autofill::first-line {
@@ -824,7 +824,7 @@ header {
   }
 }
 header .descripcion__text .descripcion__text__uxui {
-  color: #b345db;
+  color: #ce5ef7;
 }
 header .descripcion__text .descripcion__text__di {
   color: #2fc4ab;
@@ -866,9 +866,11 @@ header .descripcion__avatar .box_avatar {
   transition: all 0.3s ease-in-out;
 }
 header .scroll {
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
   -webkit-tap-highlight-color: transparent;
   text-decoration: none;
-  background-color: #b345db;
+  background-color: #ce5ef7;
   position: fixed;
   bottom: -75px;
   right: 50px;
@@ -1131,7 +1133,7 @@ hr {
   display: none;
 }
 .proyectos__ux {
-  background-color: #6cb9b2;
+  background-color: #e1fffa;
   transition: all 0.5s ease-in-out;
   background-image: url(../images/device.svg);
   background-repeat: no-repeat;
@@ -1142,28 +1144,47 @@ hr {
 .proyectos__ux .title {
   padding-top: 100px;
   text-align: center;
-  color: #FFFFFF;
+  color: #222831;
+  transition: all 0.5s ease-in-out;
 }
 .proyectos__ux:hover {
   background-color: #2fc4ab;
   transition: all 0.2s ease-in-out;
 }
+.proyectos__ux:hover .title {
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+.proyectos__ux:hover .arrow__container .arrow1 {
+  filter: brightness(100%);
+  transition: all 0.2s ease-in-out;
+}
 .proyectos__di {
-  background-color: #a779a7;
+  background-color: #f6e1ff;
   transition: all 0.5s ease-in-out;
   background-image: url(../images/plint.svg);
   background-repeat: no-repeat;
   background-position-y: -60px;
   background-position-x: center;
   background-size: 380px;
+  border-top: 30px solid #FFFFFF;
 }
 .proyectos__di .title {
   padding-top: 100px;
   text-align: center;
-  color: #FFFFFF;
+  color: #222831;
+  transition: all 0.5s ease-in-out;
 }
 .proyectos__di:hover {
-  background-color: #b345db;
+  background-color: #ce5ef7;
+  transition: all 0.2s ease-in-out;
+}
+.proyectos__di:hover .title {
+  color: #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+.proyectos__di:hover .arrow__container .arrow1 {
+  filter: brightness(100%);
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (min-width: 576px) {
@@ -1191,6 +1212,8 @@ hr {
   background-position: center;
   background-size: contain;
   margin: 0 auto;
+  filter: brightness(0);
+  transition: all 0.5s ease-in-out;
 }
 .proyectos .arrow__container .arrow1 {
   position: relative;
@@ -1264,7 +1287,7 @@ hr {
   margin-right: 3px;
   color: violet;
   transition: all 0.2s ease-in-out;
-  border: 2px solid #b345db;
+  border: 2px solid #ce5ef7;
 }
 .proyectos__proyecto--bg1 {
   background-image: url(../images/gasconnect_thumb.jpg);
@@ -1273,7 +1296,7 @@ hr {
   background-image: url(../images/radioactiva_thumb.jpg);
 }
 .proyectos__proyecto--bg3 {
-  background-image: url(../images/gasconnect_thumb.jpg);
+  background-image: url(../images/adario_thumb.jpg);
 }
 .proyectos__proyecto--bg4 {
   background-image: url(../images/radioactiva_thumb.png);
