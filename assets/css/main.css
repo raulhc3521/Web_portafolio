@@ -1373,14 +1373,9 @@ hr {
 .conocimientos {
   margin: 150px auto 150px;
 }
-.conocimientos h3 {
-  text-align: center;
-  margin-top: 100px;
-  line-height: 40px;
-}
 .conocimientos a {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 18px;
   text-decoration: none;
 }
 
