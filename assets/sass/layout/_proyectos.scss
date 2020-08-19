@@ -147,7 +147,7 @@
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
-        transition: all 50s ease-in-out;
+        transition: all 20s ease-in-out;
       
 
         &:hover {
@@ -205,9 +205,9 @@
         background-image: url(../images/radioactiva_thumb.jpg);
     }
     &__proyecto--bg3 {
-        background-image: url(../images/adario_thumb.jpg);
+        background-image: url(../images/adario_thumb2.jpg);
     }
     &__proyecto--bg4 {
-        background-image: url(../images/radioactiva_thumb.png);
+        background-image: url(../images/plint_thumb.jpg);
     }
 }

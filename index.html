@@ -26,7 +26,7 @@
                 <a href="#proyectos" class="navbar__text--inactive col-2">Proyectos</a>
                 <a href="#educacion" class="navbar__text--inactive col-2">Educación</a>
                 <a href="#experiencia" class="navbar__text--inactive col-2">Experiencia</a>
-                <a href="#conocimientos" class="navbar__text--inactive col-2">Conocimientos</a>
+                <a href="#curriculum" class="navbar__text--inactive col-2">Curriculum</a>
                 <a href="#contacto" class="navbar__text--inactive col-2">Contacto</a>
             </div>
         </div>
@@ -42,7 +42,7 @@
                 <a href="#proyectos" onclick="uncheck()" class="navbar__text--inactive col-12">Proyectos</a>
                 <a href="#educacion" onclick="uncheck()" class="navbar__text--inactive col-12">Educación</a>
                 <a href="#experiencia" onclick="uncheck()" class="navbar__text--inactive col-12">Experiencia</a>
-                <a href="#conocimientos" onclick="uncheck()" class="navbar__text--inactive col-12">Conocimientos</a>
+                <a href="#curriculum" onclick="uncheck()" class="navbar__text--inactive col-12">Curriculum</a>
                 <a href="#contacto" onclick="uncheck()" class="navbar__text--inactive col-12">Contacto</a>
             </label>
         </div>
@@ -211,13 +211,18 @@
         </div>        
     </section>
     
-    <div id="conocimientos"></div>
+    <div id="curriculum"></div>
     <section class="conocimientos container">
         <div class="row">
 
             <div class="col-12">
-                <h2 class="conocimientos__title">Conocimientos</h2>
-                <h4>Si deseas saber sobre mis conocimientos, <a href="#contacto">contactame</a> o descarga mi curriculum <a href="assets/doc/curriculum.pdf">acá</a>.</h4>                
+                <h2 class="conocimientos__title">Curriculum</h2>
+                <h4>Si deseas saber más sobre mi, <a href="#contacto">contactame</a> o descarga mi curriculum.</h4>
+                <div class="button">
+                    <button onclick="window.location.href='assets/doc/Curriculum Raúl Higueras.pdf'" type="submit">Descargar</button>
+                </div> 
+                
+                
             </div>
 
         </div>              
@@ -290,7 +295,7 @@
                             <h2>Gasconnect</h2>
                             <p class="sub">Proyecto realizado en la carrera de Diseño UX/UI de Desafío Latam</p>
                             <br>
-                            <img onclick="imgModal(this)" class="img-modal" src="assets/images/modal_gasconnect/gasconnect_modal.png" alt="">                
+                            <img onclick="imgModal(this)" class="img-modal" src="assets/images/modal_gasconnect/gasconnect_modal.jpg" alt="">                
                             <h5 class="bold">Descripción del proyecto</h5>
                             <p class="last-line">La empresa Gasco lleva teniendo problemas de usabilidad con su aplicación Gasconnect desde el año 2017, obteniendo muy bajas calificaciones en las diferentes app Store, esto motivó a la empresa a invertir en Diseño UX para su app. </p>
                             <p class="bold d-inline">Duración del proyecto:</p>
@@ -407,7 +412,7 @@
                                 <li>Wireframes</li>
                                 <li>UI Kit</li>
                             </ol>
-                            <img onclick="imgModal(this)" src="assets/images/modal_gasconnect/gasco_wireframe.png" alt="">
+                            <img onclick="imgModal(this)" src="assets/images/modal_gasconnect/gasco_wireframe.jpg" alt="">
                             <figcaption>Imagen correspondiente a los wireframes iniciales de la sección de registro en la app Gasconnect</figcaption>
                             <img onclick="imgModal(this)" src="assets/images/modal_gasconnect/WireframeHQ.png" alt="">
                             <figcaption>Imagen correspondiente a los Wireframes de la app Gasconnect</figcaption>
@@ -529,7 +534,7 @@
                             <p>Se creó un mapa con las frecuencias correspondientes a cada región para poder sintonizar la radio, el cual muestra la frecuencia posicionando el mouse en la región correspondiente en desktop y moviendo el mapa horizontalmente para posicionar la región en el centro en mobile.</p>
                             <img onclick="imgModal(this)" src="assets/images/modal_radioactiva/ra-mapa.png" alt="">
                             <figcaption>Imagen correspondiente al sketch del buscador de sintonía de radio</figcaption>
-                            <img onclick="imgModal(this)" src="assets/images/modal_radioactiva/ra-wireframe.png" alt="">
+                            <img onclick="imgModal(this)" src="assets/images/modal_radioactiva/ra-wireframe.jpg" alt="">
                             <figcaption>Imagen correspondiente a los Wireframes de la pagina de RadioActiva</figcaption>
                             <p>Acá puedes navegar en el preoyecto:</p>
                             <iframe style="width: 100%; height: 400px; border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FC3ZWF1mgVljKsZbit9PgVl%2FRadio-Activa-Home-page%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION" allowfullscreen></iframe>
@@ -541,10 +546,9 @@
                             <ol>
                                 <li>Prototipo de alta fidelidad</li>
                             </ol>
-
                             <h5 class="bold">Prueba el Prototípo</h5>
                             <p>Acá puedes ver una captura de la pagina en modo desktop</p>
-                            <img onclick="imgModal(this)" src="assets/images/modal_radioactiva/radio_activa.png" alt="">
+                            <img onclick="imgModal(this)" src="assets/images/modal_radioactiva/radio_activa.jpg" alt="">
                         </div>
 
                         <div class="resultados modal-section">
@@ -563,12 +567,21 @@
     
             <div class="modal__conjunto">
                 <div class="modal--overflow modal--overflow3">
-                    <div class="descripcion modal-description">
-                        <h2>adario</h2>
-                        <p class="sub">Planta Inteligente e Interactiva - Proyecto de titulo de la carrera Diseño Industrial de la Universdad Tecnológica Metropolitana</p>
-                        <br>
-                        <iframe style="border-radius: 15px;" src="https://docs.google.com/viewer?srcid=0B-tgiZ_qPHvwQzkyc0Q4WDM3NXM&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="600px"></iframe>
-                        <!--<iframe style="" src="https://docs.google.com/viewer?srcid=[IDENTIFICADOR_DEL_DOCUMENTO]&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>-->
+                    <div class="modal__contenido">    
+                        
+                        <div class="descripcion modal-description modal-section">
+                            <h2>adario</h2>
+                            <p class="sub">Tablero inteligente que ayuda a los adultos mayores a programar sus actividades diarias, proyecto financiado por Corfo y StartUp Chile.</p>
+                            <br>
+
+                            <img onclick="imgModal(this)" src="assets/images/modal_adario/flyer_español.jpg" alt="">
+                            <figcaption>Imagen correspondiente a los volantes entregados a los asistentes del evento Pitch Finale organizado por Starup Chile.</figcaption>
+
+                            <h3>Presentación Final Starup Chile</h3>
+                            <iframe style="border-radius: 15px;" src="https://docs.google.com/viewer?srcid=1ODySqSTKTR57keIsHsdnFzm3byhDiya2&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>
+                            <!--<h3>Presentación sobre el funcionamiento del prototipo</h3>
+                            <iframe style="border-radius: 15px;" src="https://docs.google.com/viewer?srcid=1sOUwSunhNhDylgL1AVk-lrTwwrg-Jknq&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>-->
+                        </div>
                     </div>
                 </div>
                 <button for="close" onclick="close_modal()" class="modal__close d-none d-block-md select-none">X</button>

@@ -595,7 +595,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   }
 }
 
-.contactame button {
+.contactame button, .conocimientos button {
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -608,12 +608,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   color: #FFFFFF;
   font-weight: 700;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   outline: none;
 }
-.contactame button:hover {
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
-  transition: all 0.2s ease-in-out;
+.contactame button:hover, .conocimientos button:hover {
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
 }
 
 .modal .card1 {
@@ -1245,7 +1245,7 @@ hr {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  transition: all 50s ease-in-out;
+  transition: all 20s ease-in-out;
 }
 .proyectos .proyectos__proyecto:hover {
   background-position: bottom;
@@ -1296,10 +1296,10 @@ hr {
   background-image: url(../images/radioactiva_thumb.jpg);
 }
 .proyectos__proyecto--bg3 {
-  background-image: url(../images/adario_thumb.jpg);
+  background-image: url(../images/adario_thumb2.jpg);
 }
 .proyectos__proyecto--bg4 {
-  background-image: url(../images/radioactiva_thumb.png);
+  background-image: url(../images/plint_thumb.jpg);
 }
 
 .educacion .content {

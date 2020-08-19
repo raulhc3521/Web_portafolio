@@ -30,7 +30,7 @@
 
 }
 
-.contactame button {
+.contactame button, .conocimientos button {
     text-decoration: none;
     cursor: pointer;
     display: block;
@@ -43,13 +43,11 @@
     color: $white;
     font-weight: 700;
     box-shadow: 1px 1px 2px rgba($color: #000000, $alpha: .2);
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
     outline: none;
 
     &:hover {
-        box-shadow: 1px 2px 8px rgba($color: #000000, $alpha: .5);
-        transition: all .2s ease-in-out;        
+        box-shadow: 1px 2px 8px rgba($color: #000000, $alpha: .4);
+        transition: all .3s ease-in-out;        
     }
 }
-
-
