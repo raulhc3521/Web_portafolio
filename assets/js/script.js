@@ -44,13 +44,24 @@ var boxModal = document.getElementById("box-modal");
 var pro_des = document.querySelector('.prototype-desktop');
 var pro_mob = document.querySelector('.prototype-mobile');
 var boxModal = document.getElementById("box-modal");
+var proto_d = document.querySelector('.proto-d');
+var proto_m = document.querySelector('.proto-m');
+var o_proto = document.querySelector('.open_proto');
+var c_proto = document.querySelector('.close_proto');
+
 
 function proto() {
     if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         pro_mob.style.display = "block";
+        proto_m.style.cssText = "opacity: 1; visibility: visible; display: flex;";
+
+        proto_d.style.cssText = "opacity: 0; visibility: hidden; display: none;";
     }
     else {
         pro_des.style.display = "block";
+        proto_d.style.cssText = "opacity: 1; visibility: visible; display: flex;";
+
+        proto_m.style.cssText = "opacity: 0; visibility: hidden; display: none;";
     }
 }
 

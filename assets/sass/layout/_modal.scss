@@ -53,7 +53,7 @@
         .modal-description {
             padding: 10px 0 40px;
         }
-
+        
         .modal-section {
             padding: 35px 0;
             h3 {
@@ -98,6 +98,103 @@
             margin-bottom: 20px;
         }
     }   
+}
+
+.proto-m, .proto-d {
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.proto {
+    display: flex;
+    position: relative;
+    transition: all .3s ease-in-out;
+
+    label {
+        transition: all .3s ease-in-out;
+    }
+
+    #proy:checked ~ .open_proto {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #proy:checked ~ .close_proto {
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+    #proyRA:checked ~ .open_proto {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #proyRA:checked ~ .close_proto {
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+    #prot-m:checked ~ .open_proto {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #prot-m:checked ~ .close_proto {
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+    #prot-d:checked ~ .open_proto {
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+    #prot-d:checked ~ .close_proto {
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+    }
+
+    .close_proto {
+        position: absolute;
+        display: flex;
+        bottom: 65px;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+
+        a {
+            margin: 0 auto;
+            color: $violet;
+            &:hover {
+                color: $turquoise;
+            }
+        }
+    }
+    
+
+    .open_proto {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        background-color: $white;
+        border: 1px solid $white;
+        visibility: visible;
+        opacity: 1;
+        transition: all .3s ease-in-out;
+        
+        a {
+            margin: auto;
+            text-align: center;
+            font-size: $h3-size;
+            line-height: 30px;
+            &:hover {
+                color: $violet;
+            }
+        }
+    }
 }
 
 #box-modal {
