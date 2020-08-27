@@ -1328,7 +1328,7 @@ hr {
   height: 600px;
 }
 .proyectos .proyectos__proyecto {
-  float: right;
+  display: block;
   overflow: hidden;
   width: 100%;
   height: 300px;
@@ -1336,12 +1336,11 @@ hr {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  transition: all 20s ease-in-out;
+  transition: all 10s ease-in-out;
 }
 .proyectos .proyectos__proyecto:hover {
   background-position: bottom;
-  transition: filter 2s linear;
-  transition: background-position 100s linear;
+  transition: background-position 50s linear;
 }
 .proyectos .proyectos__proyecto .proyectos__descripcion {
   background: linear-gradient(to left, black, rgba(0, 0, 0, 0));

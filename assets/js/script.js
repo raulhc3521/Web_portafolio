@@ -43,7 +43,6 @@ var modalo4 = document.querySelector('.modal--overflow4');
 var boxModal = document.getElementById("box-modal");
 var pro_des = document.querySelector('.prototype-desktop');
 var pro_mob = document.querySelector('.prototype-mobile');
-var boxModal = document.getElementById("box-modal");
 var proto_d = document.querySelector('.proto-d');
 var proto_m = document.querySelector('.proto-m');
 var o_proto = document.querySelector('.open_proto');

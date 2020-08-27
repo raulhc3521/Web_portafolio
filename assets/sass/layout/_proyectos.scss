@@ -126,7 +126,7 @@
         
     }
 
-    #desplegable1:checked ~ .proyectos__desplegable1 {  
+    #desplegable1:checked ~ .proyectos__desplegable1 { 
         animation: despliegue .8s ease-in-out;
         height: 600px;
     }
@@ -139,7 +139,7 @@
     
     
     .proyectos__proyecto{
-        float: right;
+        display: block;
         overflow: hidden;
         width: 100%;
         height: 300px;
@@ -147,13 +147,12 @@
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
-        transition: all 20s ease-in-out;
+        transition: all 10s ease-in-out;
       
 
         &:hover {
             background-position: bottom;
-            transition: filter 2s linear;
-            transition: background-position 100s linear;    
+            transition: background-position 50s linear;    
         }
 
         .proyectos__descripcion {
