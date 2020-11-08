@@ -7,7 +7,7 @@
     top: 0;
     z-index: 4;
     transition: all .3s ease-in-out;
-    padding-bottom: 8px;
+    padding: 4px 0 12px;
 
     .row {
         grid-row-gap: 10px;
@@ -25,7 +25,7 @@
         text-align: center;
         display: inline-block;
         position: absolute;
-        top: 4px;
+        top: 7px;
         right: 5%;
         color: $turquoise;
         transition: all .3s ease-in-out;

@@ -712,7 +712,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   top: 0;
   z-index: 4;
   transition: all 0.3s ease-in-out;
-  padding-bottom: 8px;
+  padding: 4px 0 12px;
 }
 .navbar .row {
   grid-row-gap: 10px;
@@ -729,7 +729,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   text-align: center;
   display: inline-block;
   position: absolute;
-  top: 4px;
+  top: 7px;
   right: 5%;
   color: #2fc4ab;
   transition: all 0.3s ease-in-out;
